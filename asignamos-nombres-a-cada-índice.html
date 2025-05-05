@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 4 Asignamos nombres a cada índice | Faros del Mercado: Índices Bursátiles que Guían la Economía Mundial.</title>
+  <meta name="description" content="Serie de tiempo" />
+  <meta name="generator" content="bookdown 0.42 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 4 Asignamos nombres a cada índice | Faros del Mercado: Índices Bursátiles que Guían la Economía Mundial." />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="Serie de tiempo" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 4 Asignamos nombres a cada índice | Faros del Mercado: Índices Bursátiles que Guían la Economía Mundial." />
+  
+  <meta name="twitter:description" content="Serie de tiempo" />
+  
+
+<meta name="author" content="Paolo De La Hoz Vicari, Genjis Ossa Gonzales" />
+
+
+<meta name="date" content="2025-04-28" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="desarrollo.html"/>
+
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/codefolding-lua-1.1/codefolding-lua.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Series de Tiempo Acciones Mercado de Valores</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Descripción del proceso y justificación del análisis de los valores bursátiles en los principales mercados globales: Estados Unidos, Europa y Asia.</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#descripción-del-proyecto."><i class="fa fa-check"></i><b>1.1</b> Descripción del proyecto.</a></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#justificación-e-importancia-del-análisis."><i class="fa fa-check"></i><b>1.2</b> Justificación e importancia del análisis.</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="referencias.html"><a href="referencias.html"><i class="fa fa-check"></i><b>2</b> Referencias</a></li>
+<li class="chapter" data-level="3" data-path="desarrollo.html"><a href="desarrollo.html"><i class="fa fa-check"></i><b>3</b> Desarrollo</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="desarrollo.html"><a href="desarrollo.html#cargar-las-librerías-necesarias"><i class="fa fa-check"></i><b>3.1</b> Cargar las librerías necesarias</a></li>
+<li class="chapter" data-level="3.2" data-path="desarrollo.html"><a href="desarrollo.html#definimos-los-índices-bursátiles-de-interés-yahoo-finance-symbols"><i class="fa fa-check"></i><b>3.2</b> Definimos los índices bursátiles de interés (Yahoo Finance symbols)</a></li>
+<li class="chapter" data-level="3.3" data-path="desarrollo.html"><a href="desarrollo.html#descargamos-los-datos-de-yahoo-finance-desde-el-2019"><i class="fa fa-check"></i><b>3.3</b> Descargamos los datos de Yahoo Finance desde el 2019</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="asignamos-nombres-a-cada-índice.html"><a href="asignamos-nombres-a-cada-índice.html"><i class="fa fa-check"></i><b>4</b> Asignamos nombres a cada índice</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Faros del Mercado: Índices Bursátiles que Guían la Economía Mundial.</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="asignamos-nombres-a-cada-índice" class="section level1 hasAnchor" number="4">
+<h1><span class="header-section-number">Chapter 4</span> Asignamos nombres a cada índice<a href="asignamos-nombres-a-cada-índice.html#asignamos-nombres-a-cada-índice" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<details class=chunk-details><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="asignamos-nombres-a-cada-índice.html#cb4-1" tabindex="-1"></a>nombres_indices <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;SP500&quot;</span>, <span class="st">&quot;DowJones&quot;</span>, <span class="st">&quot;Nasdaq&quot;</span>, <span class="st">&quot;DAX&quot;</span>, <span class="st">&quot;CAC40&quot;</span>, <span class="st">&quot;FTSE100&quot;</span>, <span class="st">&quot;Nikkei225&quot;</span>, <span class="st">&quot;HangSeng&quot;</span>, <span class="st">&quot;ShanghaiComposite&quot;</span>)</span>
+<span id="cb4-2"><a href="asignamos-nombres-a-cada-índice.html#cb4-2" tabindex="-1"></a><span class="fu">names</span>(lista_indices) <span class="ot">&lt;-</span> nombres_indices</span></code></pre></div>
+</details>
+<details class=chunk-details><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="asignamos-nombres-a-cada-índice.html#cb5-1" tabindex="-1"></a><span class="co"># EXTRAEMOS SOLO LOS CIERRES y convertimos cada serie en un objeto zoo</span></span>
+<span id="cb5-2"><a href="asignamos-nombres-a-cada-índice.html#cb5-2" tabindex="-1"></a>cierres_zoo <span class="ot">&lt;-</span> <span class="fu">lapply</span>(lista_indices, <span class="cf">function</span>(serie) {</span>
+<span id="cb5-3"><a href="asignamos-nombres-a-cada-índice.html#cb5-3" tabindex="-1"></a>  <span class="fu">zoo</span>(<span class="fu">Cl</span>(serie))  <span class="co"># Cl() extrae el &#39;Close&#39; y zoo() lo convierte a objeto de series de tiempo</span></span>
+<span id="cb5-4"><a href="asignamos-nombres-a-cada-índice.html#cb5-4" tabindex="-1"></a>})</span>
+<span id="cb5-5"><a href="asignamos-nombres-a-cada-índice.html#cb5-5" tabindex="-1"></a></span>
+<span id="cb5-6"><a href="asignamos-nombres-a-cada-índice.html#cb5-6" tabindex="-1"></a><span class="co"># Visualizar un ejemplo para confirmar</span></span>
+<span id="cb5-7"><a href="asignamos-nombres-a-cada-índice.html#cb5-7" tabindex="-1"></a><span class="fu">head</span>(cierres_zoo<span class="sc">$</span>SP500)</span></code></pre></div>
+</details>
+<pre><code>##            GSPC.Close
+## 2019-01-02    2510.03
+## 2019-01-03    2447.89
+## 2019-01-04    2531.94
+## 2019-01-07    2549.69
+## 2019-01-08    2574.41
+## 2019-01-09    2584.96</code></pre>
+<details class=chunk-details><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="asignamos-nombres-a-cada-índice.html#cb7-1" tabindex="-1"></a><span class="co"># 1. Unir todas las series zoo en un solo objeto</span></span>
+<span id="cb7-2"><a href="asignamos-nombres-a-cada-índice.html#cb7-2" tabindex="-1"></a>cierres_merged <span class="ot">&lt;-</span> <span class="fu">do.call</span>(merge, cierres_zoo)</span>
+<span id="cb7-3"><a href="asignamos-nombres-a-cada-índice.html#cb7-3" tabindex="-1"></a></span>
+<span id="cb7-4"><a href="asignamos-nombres-a-cada-índice.html#cb7-4" tabindex="-1"></a><span class="co"># 2. Visualizar la estructura</span></span>
+<span id="cb7-5"><a href="asignamos-nombres-a-cada-índice.html#cb7-5" tabindex="-1"></a><span class="fu">head</span>(cierres_merged)</span></code></pre></div>
+</details>
+<pre><code>##            GSPC.Close DJI.Close IXIC.Close GDAXI.Close FCHI.Close FTSE.Close
+## 2019-01-02    2510.03  23346.24    6665.94    10580.19    4689.39     6734.2
+## 2019-01-03    2447.89  22686.22    6463.50    10416.66    4611.49     6692.7
+## 2019-01-04    2531.94  23433.16    6738.86    10767.69    4737.12     6837.4
+## 2019-01-07    2549.69  23531.35    6823.47    10747.81    4719.17     6810.9
+## 2019-01-08    2574.41  23787.45    6897.00    10803.98    4773.27     6861.6
+## 2019-01-09    2584.96  23879.12    6957.08    10893.32    4813.58     6906.6
+##            N225.Close HSI.Close 000001.SS.Close
+## 2019-01-02         NA  25130.35        2465.291
+## 2019-01-03         NA  25064.36        2464.363
+## 2019-01-04   19561.96  25626.03        2514.868
+## 2019-01-07   20038.97  25835.70        2533.089
+## 2019-01-08   20204.04  25875.45        2526.462
+## 2019-01-09   20427.06  26462.32        2544.345</code></pre>
+<details class=chunk-details><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
+<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="asignamos-nombres-a-cada-índice.html#cb9-1" tabindex="-1"></a><span class="co"># 3. Convertir a un data frame para ggplot</span></span>
+<span id="cb9-2"><a href="asignamos-nombres-a-cada-índice.html#cb9-2" tabindex="-1"></a>cierres_df <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">Date =</span> <span class="fu">index</span>(cierres_merged), <span class="fu">coredata</span>(cierres_merged))</span>
+<span id="cb9-3"><a href="asignamos-nombres-a-cada-índice.html#cb9-3" tabindex="-1"></a></span>
+<span id="cb9-4"><a href="asignamos-nombres-a-cada-índice.html#cb9-4" tabindex="-1"></a><span class="co"># 4. Reestructurar en formato largo para gráficos</span></span>
+<span id="cb9-5"><a href="asignamos-nombres-a-cada-índice.html#cb9-5" tabindex="-1"></a>cierres_long <span class="ot">&lt;-</span> cierres_df <span class="sc">%&gt;%</span></span>
+<span id="cb9-6"><a href="asignamos-nombres-a-cada-índice.html#cb9-6" tabindex="-1"></a>  <span class="fu">pivot_longer</span>(<span class="at">cols =</span> <span class="sc">-</span>Date, <span class="at">names_to =</span> <span class="st">&quot;Indice&quot;</span>, <span class="at">values_to =</span> <span class="st">&quot;Cierre&quot;</span>)</span>
+<span id="cb9-7"><a href="asignamos-nombres-a-cada-índice.html#cb9-7" tabindex="-1"></a></span>
+<span id="cb9-8"><a href="asignamos-nombres-a-cada-índice.html#cb9-8" tabindex="-1"></a><span class="co"># 5. Gráfico de líneas: evolución histórica de todos los índices</span></span>
+<span id="cb9-9"><a href="asignamos-nombres-a-cada-índice.html#cb9-9" tabindex="-1"></a><span class="fu">ggplot</span>(cierres_long, <span class="fu">aes</span>(<span class="at">x =</span> Date, <span class="at">y =</span> Cierre, <span class="at">color =</span> Indice)) <span class="sc">+</span></span>
+<span id="cb9-10"><a href="asignamos-nombres-a-cada-índice.html#cb9-10" tabindex="-1"></a>  <span class="fu">geom_line</span>() <span class="sc">+</span></span>
+<span id="cb9-11"><a href="asignamos-nombres-a-cada-índice.html#cb9-11" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb9-12"><a href="asignamos-nombres-a-cada-índice.html#cb9-12" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">&quot;Evolución histórica de índices bursátiles (2019-Actualidad)&quot;</span>,</span>
+<span id="cb9-13"><a href="asignamos-nombres-a-cada-índice.html#cb9-13" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">&quot;Fecha&quot;</span>,</span>
+<span id="cb9-14"><a href="asignamos-nombres-a-cada-índice.html#cb9-14" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">&quot;Precio de Cierre&quot;</span>,</span>
+<span id="cb9-15"><a href="asignamos-nombres-a-cada-índice.html#cb9-15" tabindex="-1"></a>    <span class="at">color =</span> <span class="st">&quot;Índice&quot;</span></span>
+<span id="cb9-16"><a href="asignamos-nombres-a-cada-índice.html#cb9-16" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb9-17"><a href="asignamos-nombres-a-cada-índice.html#cb9-17" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code></pre></div>
+</details>
+<p><img src="_main_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
+<details class=chunk-details><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="asignamos-nombres-a-cada-índice.html#cb10-1" tabindex="-1"></a><span class="co"># --- Promedios Móviles ---</span></span>
+<span id="cb10-2"><a href="asignamos-nombres-a-cada-índice.html#cb10-2" tabindex="-1"></a></span>
+<span id="cb10-3"><a href="asignamos-nombres-a-cada-índice.html#cb10-3" tabindex="-1"></a><span class="co"># 1. Aplicar promedio móvil (7, 30, 90 días) para cada índice</span></span>
+<span id="cb10-4"><a href="asignamos-nombres-a-cada-índice.html#cb10-4" tabindex="-1"></a>promedios_moviles <span class="ot">&lt;-</span> <span class="fu">lapply</span>(cierres_zoo, <span class="cf">function</span>(serie) {</span>
+<span id="cb10-5"><a href="asignamos-nombres-a-cada-índice.html#cb10-5" tabindex="-1"></a>  <span class="fu">data.frame</span>(</span>
+<span id="cb10-6"><a href="asignamos-nombres-a-cada-índice.html#cb10-6" tabindex="-1"></a>    <span class="at">Fecha =</span> <span class="fu">index</span>(serie),</span>
+<span id="cb10-7"><a href="asignamos-nombres-a-cada-índice.html#cb10-7" tabindex="-1"></a>    <span class="at">Original =</span> <span class="fu">as.numeric</span>(serie),</span>
+<span id="cb10-8"><a href="asignamos-nombres-a-cada-índice.html#cb10-8" tabindex="-1"></a>    <span class="at">MA_7 =</span> <span class="fu">as.numeric</span>(<span class="fu">rollmean</span>(serie, <span class="at">k =</span> <span class="dv">7</span>, <span class="at">fill =</span> <span class="cn">NA</span>, <span class="at">align =</span> <span class="st">&quot;right&quot;</span>)),</span>
+<span id="cb10-9"><a href="asignamos-nombres-a-cada-índice.html#cb10-9" tabindex="-1"></a>    <span class="at">MA_30 =</span> <span class="fu">as.numeric</span>(<span class="fu">rollmean</span>(serie, <span class="at">k =</span> <span class="dv">30</span>, <span class="at">fill =</span> <span class="cn">NA</span>, <span class="at">align =</span> <span class="st">&quot;right&quot;</span>)),</span>
+<span id="cb10-10"><a href="asignamos-nombres-a-cada-índice.html#cb10-10" tabindex="-1"></a>    <span class="at">MA_90 =</span> <span class="fu">as.numeric</span>(<span class="fu">rollmean</span>(serie, <span class="at">k =</span> <span class="dv">90</span>, <span class="at">fill =</span> <span class="cn">NA</span>, <span class="at">align =</span> <span class="st">&quot;right&quot;</span>))</span>
+<span id="cb10-11"><a href="asignamos-nombres-a-cada-índice.html#cb10-11" tabindex="-1"></a>  )</span>
+<span id="cb10-12"><a href="asignamos-nombres-a-cada-índice.html#cb10-12" tabindex="-1"></a>})</span>
+<span id="cb10-13"><a href="asignamos-nombres-a-cada-índice.html#cb10-13" tabindex="-1"></a></span>
+<span id="cb10-14"><a href="asignamos-nombres-a-cada-índice.html#cb10-14" tabindex="-1"></a><span class="co"># 2. Asignar nombres</span></span>
+<span id="cb10-15"><a href="asignamos-nombres-a-cada-índice.html#cb10-15" tabindex="-1"></a><span class="fu">names</span>(promedios_moviles) <span class="ot">&lt;-</span> nombres_indices</span>
+<span id="cb10-16"><a href="asignamos-nombres-a-cada-índice.html#cb10-16" tabindex="-1"></a></span>
+<span id="cb10-17"><a href="asignamos-nombres-a-cada-índice.html#cb10-17" tabindex="-1"></a></span>
+<span id="cb10-18"><a href="asignamos-nombres-a-cada-índice.html#cb10-18" tabindex="-1"></a><span class="co"># Función para graficar promedios móviles de un índice dado</span></span>
+<span id="cb10-19"><a href="asignamos-nombres-a-cada-índice.html#cb10-19" tabindex="-1"></a>graficar_promedios_moviles <span class="ot">&lt;-</span> <span class="cf">function</span>(df, nombre_indice) {</span>
+<span id="cb10-20"><a href="asignamos-nombres-a-cada-índice.html#cb10-20" tabindex="-1"></a>  df_long <span class="ot">&lt;-</span> df <span class="sc">%&gt;%</span></span>
+<span id="cb10-21"><a href="asignamos-nombres-a-cada-índice.html#cb10-21" tabindex="-1"></a>    <span class="fu">pivot_longer</span>(<span class="at">cols =</span> <span class="fu">c</span>(<span class="st">&quot;Original&quot;</span>, <span class="st">&quot;MA_7&quot;</span>, <span class="st">&quot;MA_30&quot;</span>, <span class="st">&quot;MA_90&quot;</span>), </span>
+<span id="cb10-22"><a href="asignamos-nombres-a-cada-índice.html#cb10-22" tabindex="-1"></a>                 <span class="at">names_to =</span> <span class="st">&quot;Serie&quot;</span>, <span class="at">values_to =</span> <span class="st">&quot;Valor&quot;</span>)</span>
+<span id="cb10-23"><a href="asignamos-nombres-a-cada-índice.html#cb10-23" tabindex="-1"></a>  </span>
+<span id="cb10-24"><a href="asignamos-nombres-a-cada-índice.html#cb10-24" tabindex="-1"></a>  <span class="fu">ggplot</span>(df_long, <span class="fu">aes</span>(<span class="at">x =</span> Fecha, <span class="at">y =</span> Valor, <span class="at">color =</span> Serie)) <span class="sc">+</span></span>
+<span id="cb10-25"><a href="asignamos-nombres-a-cada-índice.html#cb10-25" tabindex="-1"></a>    <span class="fu">geom_line</span>() <span class="sc">+</span></span>
+<span id="cb10-26"><a href="asignamos-nombres-a-cada-índice.html#cb10-26" tabindex="-1"></a>    <span class="fu">labs</span>(</span>
+<span id="cb10-27"><a href="asignamos-nombres-a-cada-índice.html#cb10-27" tabindex="-1"></a>      <span class="at">title =</span> <span class="fu">paste</span>(nombre_indice, <span class="st">&quot;- Evolución y Promedios Móviles (7, 30, 90 días)&quot;</span>),</span>
+<span id="cb10-28"><a href="asignamos-nombres-a-cada-índice.html#cb10-28" tabindex="-1"></a>      <span class="at">x =</span> <span class="st">&quot;Fecha&quot;</span>,</span>
+<span id="cb10-29"><a href="asignamos-nombres-a-cada-índice.html#cb10-29" tabindex="-1"></a>      <span class="at">y =</span> <span class="st">&quot;Precio&quot;</span>,</span>
+<span id="cb10-30"><a href="asignamos-nombres-a-cada-índice.html#cb10-30" tabindex="-1"></a>      <span class="at">color =</span> <span class="st">&quot;Serie&quot;</span></span>
+<span id="cb10-31"><a href="asignamos-nombres-a-cada-índice.html#cb10-31" tabindex="-1"></a>    ) <span class="sc">+</span></span>
+<span id="cb10-32"><a href="asignamos-nombres-a-cada-índice.html#cb10-32" tabindex="-1"></a>    <span class="fu">theme_minimal</span>()</span>
+<span id="cb10-33"><a href="asignamos-nombres-a-cada-índice.html#cb10-33" tabindex="-1"></a>}</span>
+<span id="cb10-34"><a href="asignamos-nombres-a-cada-índice.html#cb10-34" tabindex="-1"></a><span class="co"># Aplicar la función a todos los índices</span></span>
+<span id="cb10-35"><a href="asignamos-nombres-a-cada-índice.html#cb10-35" tabindex="-1"></a><span class="cf">for</span> (indice <span class="cf">in</span> nombres_indices) {</span>
+<span id="cb10-36"><a href="asignamos-nombres-a-cada-índice.html#cb10-36" tabindex="-1"></a>  <span class="fu">print</span>(<span class="fu">graficar_promedios_moviles</span>(promedios_moviles[[indice]], indice))</span>
+<span id="cb10-37"><a href="asignamos-nombres-a-cada-índice.html#cb10-37" tabindex="-1"></a>}</span></code></pre></div>
+</details>
+<p><img src="_main_files/figure-html/unnamed-chunk-4-2.png" width="672" /><img src="_main_files/figure-html/unnamed-chunk-4-3.png" width="672" /><img src="_main_files/figure-html/unnamed-chunk-4-4.png" width="672" /><img src="_main_files/figure-html/unnamed-chunk-4-5.png" width="672" /><img src="_main_files/figure-html/unnamed-chunk-4-6.png" width="672" /><img src="_main_files/figure-html/unnamed-chunk-4-7.png" width="672" /><img src="_main_files/figure-html/unnamed-chunk-4-8.png" width="672" /><img src="_main_files/figure-html/unnamed-chunk-4-9.png" width="672" /><img src="_main_files/figure-html/unnamed-chunk-4-10.png" width="672" /></p>
+<details class=chunk-details><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
+<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="asignamos-nombres-a-cada-índice.html#cb11-1" tabindex="-1"></a><span class="co"># Función para graficar la autocorrelación (ACF) de un índice</span></span>
+<span id="cb11-2"><a href="asignamos-nombres-a-cada-índice.html#cb11-2" tabindex="-1"></a>graficar_acf <span class="ot">&lt;-</span> <span class="cf">function</span>(serie, nombre_indice) {</span>
+<span id="cb11-3"><a href="asignamos-nombres-a-cada-índice.html#cb11-3" tabindex="-1"></a>  serie_sin_na <span class="ot">&lt;-</span> <span class="fu">na.omit</span>(serie)  <span class="co"># 1. Eliminar los valores faltantes (NA)</span></span>
+<span id="cb11-4"><a href="asignamos-nombres-a-cada-índice.html#cb11-4" tabindex="-1"></a>  <span class="fu">acf</span>(<span class="fu">coredata</span>(serie_sin_na),     <span class="co"># 2. Calcula autocorrelaciones</span></span>
+<span id="cb11-5"><a href="asignamos-nombres-a-cada-índice.html#cb11-5" tabindex="-1"></a>      <span class="at">lag.max =</span> <span class="dv">30</span>,               <span class="co"># 3. Mide autocorrelaciones hasta 30 rezagos (lags)</span></span>
+<span id="cb11-6"><a href="asignamos-nombres-a-cada-índice.html#cb11-6" tabindex="-1"></a>      <span class="at">main =</span> <span class="fu">paste</span>(<span class="st">&quot;Autocorrelación (ACF) -&quot;</span>, nombre_indice))  <span class="co"># 4. Título del gráfico</span></span>
+<span id="cb11-7"><a href="asignamos-nombres-a-cada-índice.html#cb11-7" tabindex="-1"></a>}</span>
+<span id="cb11-8"><a href="asignamos-nombres-a-cada-índice.html#cb11-8" tabindex="-1"></a></span>
+<span id="cb11-9"><a href="asignamos-nombres-a-cada-índice.html#cb11-9" tabindex="-1"></a><span class="co"># Aplicar la función a todos los índices</span></span>
+<span id="cb11-10"><a href="asignamos-nombres-a-cada-índice.html#cb11-10" tabindex="-1"></a><span class="cf">for</span> (indice <span class="cf">in</span> nombres_indices) {</span>
+<span id="cb11-11"><a href="asignamos-nombres-a-cada-índice.html#cb11-11" tabindex="-1"></a>  <span class="fu">graficar_acf</span>(cierres_zoo[[indice]], indice)</span>
+<span id="cb11-12"><a href="asignamos-nombres-a-cada-índice.html#cb11-12" tabindex="-1"></a>}</span></code></pre></div>
+</details>
+<p><img src="_main_files/figure-html/unnamed-chunk-4-11.png" width="672" /><img src="_main_files/figure-html/unnamed-chunk-4-12.png" width="672" /><img src="_main_files/figure-html/unnamed-chunk-4-13.png" width="672" /><img src="_main_files/figure-html/unnamed-chunk-4-14.png" width="672" /><img src="_main_files/figure-html/unnamed-chunk-4-15.png" width="672" /><img src="_main_files/figure-html/unnamed-chunk-4-16.png" width="672" /><img src="_main_files/figure-html/unnamed-chunk-4-17.png" width="672" /><img src="_main_files/figure-html/unnamed-chunk-4-18.png" width="672" /><img src="_main_files/figure-html/unnamed-chunk-4-19.png" width="672" /></p>
+<details class=chunk-details><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
+<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="asignamos-nombres-a-cada-índice.html#cb12-1" tabindex="-1"></a><span class="co"># Función para descomponer y graficar un índice bursátil (versión profesional)</span></span>
+<span id="cb12-2"><a href="asignamos-nombres-a-cada-índice.html#cb12-2" tabindex="-1"></a>descomponer_y_graficar <span class="ot">&lt;-</span> <span class="cf">function</span>(serie_zoo, nombre_indice) {</span>
+<span id="cb12-3"><a href="asignamos-nombres-a-cada-índice.html#cb12-3" tabindex="-1"></a>  </span>
+<span id="cb12-4"><a href="asignamos-nombres-a-cada-índice.html#cb12-4" tabindex="-1"></a>  <span class="co"># 1. Eliminar NA</span></span>
+<span id="cb12-5"><a href="asignamos-nombres-a-cada-índice.html#cb12-5" tabindex="-1"></a>  serie_limpia <span class="ot">&lt;-</span> <span class="fu">na.omit</span>(serie_zoo)</span>
+<span id="cb12-6"><a href="asignamos-nombres-a-cada-índice.html#cb12-6" tabindex="-1"></a>  </span>
+<span id="cb12-7"><a href="asignamos-nombres-a-cada-índice.html#cb12-7" tabindex="-1"></a>  <span class="co"># 2. Convertir a vector numérico puro</span></span>
+<span id="cb12-8"><a href="asignamos-nombres-a-cada-índice.html#cb12-8" tabindex="-1"></a>  valores_numericos <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(serie_limpia)</span>
+<span id="cb12-9"><a href="asignamos-nombres-a-cada-índice.html#cb12-9" tabindex="-1"></a>  </span>
+<span id="cb12-10"><a href="asignamos-nombres-a-cada-índice.html#cb12-10" tabindex="-1"></a>  <span class="co"># 3. Convertir a objeto ts</span></span>
+<span id="cb12-11"><a href="asignamos-nombres-a-cada-índice.html#cb12-11" tabindex="-1"></a>  serie_ts <span class="ot">&lt;-</span> <span class="fu">ts</span>(valores_numericos,</span>
+<span id="cb12-12"><a href="asignamos-nombres-a-cada-índice.html#cb12-12" tabindex="-1"></a>                 <span class="at">start =</span> <span class="fu">c</span>(<span class="dv">2019</span>, <span class="dv">1</span>),</span>
+<span id="cb12-13"><a href="asignamos-nombres-a-cada-índice.html#cb12-13" tabindex="-1"></a>                 <span class="at">frequency =</span> <span class="dv">252</span>)</span>
+<span id="cb12-14"><a href="asignamos-nombres-a-cada-índice.html#cb12-14" tabindex="-1"></a>  </span>
+<span id="cb12-15"><a href="asignamos-nombres-a-cada-índice.html#cb12-15" tabindex="-1"></a>  <span class="co"># 4. Graficar descomposición clásica</span></span>
+<span id="cb12-16"><a href="asignamos-nombres-a-cada-índice.html#cb12-16" tabindex="-1"></a>  <span class="fu">plot</span>(<span class="fu">decompose</span>(serie_ts))</span>
+<span id="cb12-17"><a href="asignamos-nombres-a-cada-índice.html#cb12-17" tabindex="-1"></a>  <span class="fu">mtext</span>(<span class="fu">paste</span>(<span class="st">&quot;Descomposición Clásica -&quot;</span>, nombre_indice), <span class="at">side =</span> <span class="dv">3</span>, <span class="at">line =</span> <span class="dv">1</span>, <span class="at">cex =</span> <span class="fl">1.5</span>)</span>
+<span id="cb12-18"><a href="asignamos-nombres-a-cada-índice.html#cb12-18" tabindex="-1"></a>  </span>
+<span id="cb12-19"><a href="asignamos-nombres-a-cada-índice.html#cb12-19" tabindex="-1"></a>  <span class="co"># 5. Graficar descomposición STL</span></span>
+<span id="cb12-20"><a href="asignamos-nombres-a-cada-índice.html#cb12-20" tabindex="-1"></a>  <span class="fu">plot</span>(<span class="fu">stl</span>(serie_ts, <span class="at">s.window =</span> <span class="st">&quot;periodic&quot;</span>))</span>
+<span id="cb12-21"><a href="asignamos-nombres-a-cada-índice.html#cb12-21" tabindex="-1"></a>  <span class="fu">mtext</span>(<span class="fu">paste</span>(<span class="st">&quot;Descomposición STL -&quot;</span>, nombre_indice), <span class="at">side =</span> <span class="dv">3</span>, <span class="at">line =</span> <span class="dv">1</span>, <span class="at">cex =</span> <span class="fl">1.5</span>)</span>
+<span id="cb12-22"><a href="asignamos-nombres-a-cada-índice.html#cb12-22" tabindex="-1"></a>}</span>
+<span id="cb12-23"><a href="asignamos-nombres-a-cada-índice.html#cb12-23" tabindex="-1"></a><span class="co"># Aplicar la función a todos los índices</span></span>
+<span id="cb12-24"><a href="asignamos-nombres-a-cada-índice.html#cb12-24" tabindex="-1"></a><span class="cf">for</span> (indice <span class="cf">in</span> nombres_indices) {</span>
+<span id="cb12-25"><a href="asignamos-nombres-a-cada-índice.html#cb12-25" tabindex="-1"></a>  <span class="fu">descomponer_y_graficar</span>(cierres_zoo[[indice]], indice)</span>
+<span id="cb12-26"><a href="asignamos-nombres-a-cada-índice.html#cb12-26" tabindex="-1"></a>}</span></code></pre></div>
+</details>
+<p><img src="_main_files/figure-html/unnamed-chunk-4-20.png" width="672" /><img src="_main_files/figure-html/unnamed-chunk-4-21.png" width="672" /><img src="_main_files/figure-html/unnamed-chunk-4-22.png" width="672" /><img src="_main_files/figure-html/unnamed-chunk-4-23.png" width="672" /><img src="_main_files/figure-html/unnamed-chunk-4-24.png" width="672" /><img src="_main_files/figure-html/unnamed-chunk-4-25.png" width="672" /><img src="_main_files/figure-html/unnamed-chunk-4-26.png" width="672" /><img src="_main_files/figure-html/unnamed-chunk-4-27.png" width="672" /><img src="_main_files/figure-html/unnamed-chunk-4-28.png" width="672" /><img src="_main_files/figure-html/unnamed-chunk-4-29.png" width="672" /><img src="_main_files/figure-html/unnamed-chunk-4-30.png" width="672" /><img src="_main_files/figure-html/unnamed-chunk-4-31.png" width="672" /><img src="_main_files/figure-html/unnamed-chunk-4-32.png" width="672" /><img src="_main_files/figure-html/unnamed-chunk-4-33.png" width="672" /><img src="_main_files/figure-html/unnamed-chunk-4-34.png" width="672" /><img src="_main_files/figure-html/unnamed-chunk-4-35.png" width="672" /><img src="_main_files/figure-html/unnamed-chunk-4-36.png" width="672" /><img src="_main_files/figure-html/unnamed-chunk-4-37.png" width="672" /></p>
+<details class=chunk-details><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
+<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="asignamos-nombres-a-cada-índice.html#cb13-1" tabindex="-1"></a><span class="co"># 1. Crear función para analizar cada serie</span></span>
+<span id="cb13-2"><a href="asignamos-nombres-a-cada-índice.html#cb13-2" tabindex="-1"></a>analizar_comportamiento <span class="ot">&lt;-</span> <span class="cf">function</span>(serie_zoo) {</span>
+<span id="cb13-3"><a href="asignamos-nombres-a-cada-índice.html#cb13-3" tabindex="-1"></a>  serie_limpia <span class="ot">&lt;-</span> <span class="fu">na.omit</span>(serie_zoo)</span>
+<span id="cb13-4"><a href="asignamos-nombres-a-cada-índice.html#cb13-4" tabindex="-1"></a>  valores <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(serie_limpia)</span>
+<span id="cb13-5"><a href="asignamos-nombres-a-cada-índice.html#cb13-5" tabindex="-1"></a>  ts_serie <span class="ot">&lt;-</span> <span class="fu">ts</span>(valores, <span class="at">start =</span> <span class="fu">c</span>(<span class="dv">2019</span>, <span class="dv">1</span>), <span class="at">frequency =</span> <span class="dv">252</span>)</span>
+<span id="cb13-6"><a href="asignamos-nombres-a-cada-índice.html#cb13-6" tabindex="-1"></a>  </span>
+<span id="cb13-7"><a href="asignamos-nombres-a-cada-índice.html#cb13-7" tabindex="-1"></a>  <span class="co"># Decomposición STL</span></span>
+<span id="cb13-8"><a href="asignamos-nombres-a-cada-índice.html#cb13-8" tabindex="-1"></a>  descomposicion <span class="ot">&lt;-</span> <span class="fu">stl</span>(ts_serie, <span class="at">s.window =</span> <span class="st">&quot;periodic&quot;</span>)</span>
+<span id="cb13-9"><a href="asignamos-nombres-a-cada-índice.html#cb13-9" tabindex="-1"></a>  </span>
+<span id="cb13-10"><a href="asignamos-nombres-a-cada-índice.html#cb13-10" tabindex="-1"></a>  trend <span class="ot">&lt;-</span> descomposicion<span class="sc">$</span>time.series[, <span class="st">&quot;trend&quot;</span>]</span>
+<span id="cb13-11"><a href="asignamos-nombres-a-cada-índice.html#cb13-11" tabindex="-1"></a>  seasonal <span class="ot">&lt;-</span> descomposicion<span class="sc">$</span>time.series[, <span class="st">&quot;seasonal&quot;</span>]</span>
+<span id="cb13-12"><a href="asignamos-nombres-a-cada-índice.html#cb13-12" tabindex="-1"></a>  remainder <span class="ot">&lt;-</span> descomposicion<span class="sc">$</span>time.series[, <span class="st">&quot;remainder&quot;</span>]</span>
+<span id="cb13-13"><a href="asignamos-nombres-a-cada-índice.html#cb13-13" tabindex="-1"></a>  </span>
+<span id="cb13-14"><a href="asignamos-nombres-a-cada-índice.html#cb13-14" tabindex="-1"></a>  <span class="co"># --- Tendencia ---</span></span>
+<span id="cb13-15"><a href="asignamos-nombres-a-cada-índice.html#cb13-15" tabindex="-1"></a>  cambio_tendencia <span class="ot">&lt;-</span> (<span class="fu">tail</span>(trend, <span class="dv">1</span>) <span class="sc">-</span> <span class="fu">head</span>(trend, <span class="dv">1</span>)) <span class="sc">/</span> <span class="fu">mean</span>(trend)</span>
+<span id="cb13-16"><a href="asignamos-nombres-a-cada-índice.html#cb13-16" tabindex="-1"></a>  </span>
+<span id="cb13-17"><a href="asignamos-nombres-a-cada-índice.html#cb13-17" tabindex="-1"></a>  <span class="cf">if</span> (<span class="fu">abs</span>(cambio_tendencia) <span class="sc">&gt;</span> <span class="fl">0.1</span>) {</span>
+<span id="cb13-18"><a href="asignamos-nombres-a-cada-índice.html#cb13-18" tabindex="-1"></a>    tendencia_eval <span class="ot">&lt;-</span> <span class="fu">ifelse</span>(cambio_tendencia <span class="sc">&gt;</span> <span class="dv">0</span>, <span class="st">&quot;Creciente&quot;</span>, <span class="st">&quot;Decreciente&quot;</span>)</span>
+<span id="cb13-19"><a href="asignamos-nombres-a-cada-índice.html#cb13-19" tabindex="-1"></a>  } <span class="cf">else</span> {</span>
+<span id="cb13-20"><a href="asignamos-nombres-a-cada-índice.html#cb13-20" tabindex="-1"></a>    tendencia_eval <span class="ot">&lt;-</span> <span class="st">&quot;Estable&quot;</span></span>
+<span id="cb13-21"><a href="asignamos-nombres-a-cada-índice.html#cb13-21" tabindex="-1"></a>  }</span>
+<span id="cb13-22"><a href="asignamos-nombres-a-cada-índice.html#cb13-22" tabindex="-1"></a>  </span>
+<span id="cb13-23"><a href="asignamos-nombres-a-cada-índice.html#cb13-23" tabindex="-1"></a>  <span class="co"># --- Estacionalidad ---</span></span>
+<span id="cb13-24"><a href="asignamos-nombres-a-cada-índice.html#cb13-24" tabindex="-1"></a>  amplitud_estacional <span class="ot">&lt;-</span> <span class="fu">max</span>(seasonal) <span class="sc">-</span> <span class="fu">min</span>(seasonal)</span>
+<span id="cb13-25"><a href="asignamos-nombres-a-cada-índice.html#cb13-25" tabindex="-1"></a>  promedio_nivel <span class="ot">&lt;-</span> <span class="fu">mean</span>(valores, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb13-26"><a href="asignamos-nombres-a-cada-índice.html#cb13-26" tabindex="-1"></a>  </span>
+<span id="cb13-27"><a href="asignamos-nombres-a-cada-índice.html#cb13-27" tabindex="-1"></a>  <span class="cf">if</span> ((amplitud_estacional <span class="sc">/</span> promedio_nivel) <span class="sc">&gt;</span> <span class="fl">0.05</span>) {</span>
+<span id="cb13-28"><a href="asignamos-nombres-a-cada-índice.html#cb13-28" tabindex="-1"></a>    estacionalidad_eval <span class="ot">&lt;-</span> <span class="st">&quot;Fuerte&quot;</span></span>
+<span id="cb13-29"><a href="asignamos-nombres-a-cada-índice.html#cb13-29" tabindex="-1"></a>  } <span class="cf">else</span> {</span>
+<span id="cb13-30"><a href="asignamos-nombres-a-cada-índice.html#cb13-30" tabindex="-1"></a>    estacionalidad_eval <span class="ot">&lt;-</span> <span class="st">&quot;Débil&quot;</span></span>
+<span id="cb13-31"><a href="asignamos-nombres-a-cada-índice.html#cb13-31" tabindex="-1"></a>  }</span>
+<span id="cb13-32"><a href="asignamos-nombres-a-cada-índice.html#cb13-32" tabindex="-1"></a>  </span>
+<span id="cb13-33"><a href="asignamos-nombres-a-cada-índice.html#cb13-33" tabindex="-1"></a>  <span class="co"># --- Ruido ---</span></span>
+<span id="cb13-34"><a href="asignamos-nombres-a-cada-índice.html#cb13-34" tabindex="-1"></a>  sd_ruido <span class="ot">&lt;-</span> <span class="fu">sd</span>(remainder, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb13-35"><a href="asignamos-nombres-a-cada-índice.html#cb13-35" tabindex="-1"></a>  </span>
+<span id="cb13-36"><a href="asignamos-nombres-a-cada-índice.html#cb13-36" tabindex="-1"></a>  <span class="cf">if</span> ((sd_ruido <span class="sc">/</span> promedio_nivel) <span class="sc">&gt;</span> <span class="fl">0.05</span>) {</span>
+<span id="cb13-37"><a href="asignamos-nombres-a-cada-índice.html#cb13-37" tabindex="-1"></a>    ruido_eval <span class="ot">&lt;-</span> <span class="st">&quot;Alto&quot;</span></span>
+<span id="cb13-38"><a href="asignamos-nombres-a-cada-índice.html#cb13-38" tabindex="-1"></a>  } <span class="cf">else</span> {</span>
+<span id="cb13-39"><a href="asignamos-nombres-a-cada-índice.html#cb13-39" tabindex="-1"></a>    ruido_eval <span class="ot">&lt;-</span> <span class="st">&quot;Moderado&quot;</span></span>
+<span id="cb13-40"><a href="asignamos-nombres-a-cada-índice.html#cb13-40" tabindex="-1"></a>  }</span>
+<span id="cb13-41"><a href="asignamos-nombres-a-cada-índice.html#cb13-41" tabindex="-1"></a>  </span>
+<span id="cb13-42"><a href="asignamos-nombres-a-cada-índice.html#cb13-42" tabindex="-1"></a>  <span class="fu">return</span>(<span class="fu">c</span>(<span class="at">Tendencia =</span> tendencia_eval, <span class="at">Estacionalidad =</span> estacionalidad_eval, <span class="at">Ruido =</span> ruido_eval))</span>
+<span id="cb13-43"><a href="asignamos-nombres-a-cada-índice.html#cb13-43" tabindex="-1"></a>}</span>
+<span id="cb13-44"><a href="asignamos-nombres-a-cada-índice.html#cb13-44" tabindex="-1"></a></span>
+<span id="cb13-45"><a href="asignamos-nombres-a-cada-índice.html#cb13-45" tabindex="-1"></a><span class="co"># 2. Aplicarlo a todos los índices</span></span>
+<span id="cb13-46"><a href="asignamos-nombres-a-cada-índice.html#cb13-46" tabindex="-1"></a>resumen_automatico <span class="ot">&lt;-</span> <span class="fu">t</span>(<span class="fu">sapply</span>(cierres_zoo, analizar_comportamiento))</span>
+<span id="cb13-47"><a href="asignamos-nombres-a-cada-índice.html#cb13-47" tabindex="-1"></a></span>
+<span id="cb13-48"><a href="asignamos-nombres-a-cada-índice.html#cb13-48" tabindex="-1"></a><span class="co"># 3. Convertir a data frame ordenado</span></span>
+<span id="cb13-49"><a href="asignamos-nombres-a-cada-índice.html#cb13-49" tabindex="-1"></a>resumen_automatico_df <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
+<span id="cb13-50"><a href="asignamos-nombres-a-cada-índice.html#cb13-50" tabindex="-1"></a>  <span class="at">Indice =</span> nombres_indices,</span>
+<span id="cb13-51"><a href="asignamos-nombres-a-cada-índice.html#cb13-51" tabindex="-1"></a>  <span class="at">Tendencia =</span> resumen_automatico[, <span class="st">&quot;Tendencia&quot;</span>],</span>
+<span id="cb13-52"><a href="asignamos-nombres-a-cada-índice.html#cb13-52" tabindex="-1"></a>  <span class="at">Estacionalidad =</span> resumen_automatico[, <span class="st">&quot;Estacionalidad&quot;</span>],</span>
+<span id="cb13-53"><a href="asignamos-nombres-a-cada-índice.html#cb13-53" tabindex="-1"></a>  <span class="at">Ruido =</span> resumen_automatico[, <span class="st">&quot;Ruido&quot;</span>]</span>
+<span id="cb13-54"><a href="asignamos-nombres-a-cada-índice.html#cb13-54" tabindex="-1"></a>)</span>
+<span id="cb13-55"><a href="asignamos-nombres-a-cada-índice.html#cb13-55" tabindex="-1"></a></span>
+<span id="cb13-56"><a href="asignamos-nombres-a-cada-índice.html#cb13-56" tabindex="-1"></a><span class="co"># 4. Mostrar la tabla bonita</span></span>
+<span id="cb13-57"><a href="asignamos-nombres-a-cada-índice.html#cb13-57" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">kable</span>(resumen_automatico_df, <span class="at">caption =</span> <span class="st">&quot;Resumen automático de la tendencia, estacionalidad y ruido observados por índice (basado en descomposición STL).&quot;</span>)</span></code></pre></div>
+</details>
+<table>
+<caption><span id="tab:unnamed-chunk-4">Table 4.1: </span>Resumen automático de la tendencia, estacionalidad y ruido observados por índice (basado en descomposición STL).</caption>
+<colgroup>
+<col width="25%" />
+<col width="25%" />
+<col width="16%" />
+<col width="20%" />
+<col width="12%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left"></th>
+<th align="left">Indice</th>
+<th align="left">Tendencia</th>
+<th align="left">Estacionalidad</th>
+<th align="left">Ruido</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">SP500</td>
+<td align="left">SP500</td>
+<td align="left">Creciente</td>
+<td align="left">Fuerte</td>
+<td align="left">Moderado</td>
+</tr>
+<tr class="even">
+<td align="left">DowJones</td>
+<td align="left">DowJones</td>
+<td align="left">Creciente</td>
+<td align="left">Fuerte</td>
+<td align="left">Moderado</td>
+</tr>
+<tr class="odd">
+<td align="left">Nasdaq</td>
+<td align="left">Nasdaq</td>
+<td align="left">Creciente</td>
+<td align="left">Fuerte</td>
+<td align="left">Moderado</td>
+</tr>
+<tr class="even">
+<td align="left">DAX</td>
+<td align="left">DAX</td>
+<td align="left">Creciente</td>
+<td align="left">Fuerte</td>
+<td align="left">Moderado</td>
+</tr>
+<tr class="odd">
+<td align="left">CAC40</td>
+<td align="left">CAC40</td>
+<td align="left">Creciente</td>
+<td align="left">Fuerte</td>
+<td align="left">Moderado</td>
+</tr>
+<tr class="even">
+<td align="left">FTSE100</td>
+<td align="left">FTSE100</td>
+<td align="left">Creciente</td>
+<td align="left">Fuerte</td>
+<td align="left">Moderado</td>
+</tr>
+<tr class="odd">
+<td align="left">Nikkei225</td>
+<td align="left">Nikkei225</td>
+<td align="left">Creciente</td>
+<td align="left">Fuerte</td>
+<td align="left">Moderado</td>
+</tr>
+<tr class="even">
+<td align="left">HangSeng</td>
+<td align="left">HangSeng</td>
+<td align="left">Decreciente</td>
+<td align="left">Fuerte</td>
+<td align="left">Moderado</td>
+</tr>
+<tr class="odd">
+<td align="left">ShanghaiComposite</td>
+<td align="left">ShanghaiComposite</td>
+<td align="left">Creciente</td>
+<td align="left">Fuerte</td>
+<td align="left">Moderado</td>
+</tr>
+</tbody>
+</table>
+<details class=chunk-details><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
+<div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb14-1"><a href="asignamos-nombres-a-cada-índice.html#cb14-1" tabindex="-1"></a><span class="co"># Cargar librería adicional para Heatmaps</span></span>
+<span id="cb14-2"><a href="asignamos-nombres-a-cada-índice.html#cb14-2" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb14-3"><a href="asignamos-nombres-a-cada-índice.html#cb14-3" tabindex="-1"></a></span>
+<span id="cb14-4"><a href="asignamos-nombres-a-cada-índice.html#cb14-4" tabindex="-1"></a><span class="co"># 1. Usamos el resumen automático que ya creamos</span></span>
+<span id="cb14-5"><a href="asignamos-nombres-a-cada-índice.html#cb14-5" tabindex="-1"></a>resumen_mapa <span class="ot">&lt;-</span> resumen_automatico_df</span>
+<span id="cb14-6"><a href="asignamos-nombres-a-cada-índice.html#cb14-6" tabindex="-1"></a></span>
+<span id="cb14-7"><a href="asignamos-nombres-a-cada-índice.html#cb14-7" tabindex="-1"></a><span class="co"># 2. Codificar las variables cualitativas a valores numéricos</span></span>
+<span id="cb14-8"><a href="asignamos-nombres-a-cada-índice.html#cb14-8" tabindex="-1"></a>resumen_mapa_numeric <span class="ot">&lt;-</span> resumen_mapa <span class="sc">%&gt;%</span></span>
+<span id="cb14-9"><a href="asignamos-nombres-a-cada-índice.html#cb14-9" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb14-10"><a href="asignamos-nombres-a-cada-índice.html#cb14-10" tabindex="-1"></a>    <span class="at">Tendencia =</span> <span class="fu">case_when</span>(</span>
+<span id="cb14-11"><a href="asignamos-nombres-a-cada-índice.html#cb14-11" tabindex="-1"></a>      Tendencia <span class="sc">==</span> <span class="st">&quot;Creciente&quot;</span> <span class="sc">~</span> <span class="dv">1</span>,</span>
+<span id="cb14-12"><a href="asignamos-nombres-a-cada-índice.html#cb14-12" tabindex="-1"></a>      Tendencia <span class="sc">==</span> <span class="st">&quot;Decreciente&quot;</span> <span class="sc">~</span> <span class="sc">-</span><span class="dv">1</span>,</span>
+<span id="cb14-13"><a href="asignamos-nombres-a-cada-índice.html#cb14-13" tabindex="-1"></a>      Tendencia <span class="sc">==</span> <span class="st">&quot;Estable&quot;</span> <span class="sc">~</span> <span class="dv">0</span>,</span>
+<span id="cb14-14"><a href="asignamos-nombres-a-cada-índice.html#cb14-14" tabindex="-1"></a>      <span class="cn">TRUE</span> <span class="sc">~</span> <span class="cn">NA_real_</span></span>
+<span id="cb14-15"><a href="asignamos-nombres-a-cada-índice.html#cb14-15" tabindex="-1"></a>    ),</span>
+<span id="cb14-16"><a href="asignamos-nombres-a-cada-índice.html#cb14-16" tabindex="-1"></a>    <span class="at">Estacionalidad =</span> <span class="fu">case_when</span>(</span>
+<span id="cb14-17"><a href="asignamos-nombres-a-cada-índice.html#cb14-17" tabindex="-1"></a>      Estacionalidad <span class="sc">==</span> <span class="st">&quot;Fuerte&quot;</span> <span class="sc">~</span> <span class="dv">1</span>,</span>
+<span id="cb14-18"><a href="asignamos-nombres-a-cada-índice.html#cb14-18" tabindex="-1"></a>      Estacionalidad <span class="sc">==</span> <span class="st">&quot;Débil&quot;</span> <span class="sc">~</span> <span class="dv">0</span>,</span>
+<span id="cb14-19"><a href="asignamos-nombres-a-cada-índice.html#cb14-19" tabindex="-1"></a>      <span class="cn">TRUE</span> <span class="sc">~</span> <span class="cn">NA_real_</span></span>
+<span id="cb14-20"><a href="asignamos-nombres-a-cada-índice.html#cb14-20" tabindex="-1"></a>    ),</span>
+<span id="cb14-21"><a href="asignamos-nombres-a-cada-índice.html#cb14-21" tabindex="-1"></a>    <span class="at">Ruido =</span> <span class="fu">case_when</span>(</span>
+<span id="cb14-22"><a href="asignamos-nombres-a-cada-índice.html#cb14-22" tabindex="-1"></a>      Ruido <span class="sc">==</span> <span class="st">&quot;Alto&quot;</span> <span class="sc">~</span> <span class="dv">1</span>,</span>
+<span id="cb14-23"><a href="asignamos-nombres-a-cada-índice.html#cb14-23" tabindex="-1"></a>      Ruido <span class="sc">==</span> <span class="st">&quot;Moderado&quot;</span> <span class="sc">~</span> <span class="dv">0</span>,</span>
+<span id="cb14-24"><a href="asignamos-nombres-a-cada-índice.html#cb14-24" tabindex="-1"></a>      <span class="cn">TRUE</span> <span class="sc">~</span> <span class="cn">NA_real_</span></span>
+<span id="cb14-25"><a href="asignamos-nombres-a-cada-índice.html#cb14-25" tabindex="-1"></a>    )</span>
+<span id="cb14-26"><a href="asignamos-nombres-a-cada-índice.html#cb14-26" tabindex="-1"></a>  )</span>
+<span id="cb14-27"><a href="asignamos-nombres-a-cada-índice.html#cb14-27" tabindex="-1"></a></span>
+<span id="cb14-28"><a href="asignamos-nombres-a-cada-índice.html#cb14-28" tabindex="-1"></a><span class="co"># 3. Reorganizar el dataframe en formato largo para ggplot</span></span>
+<span id="cb14-29"><a href="asignamos-nombres-a-cada-índice.html#cb14-29" tabindex="-1"></a>resumen_long <span class="ot">&lt;-</span> resumen_mapa_numeric <span class="sc">%&gt;%</span></span>
+<span id="cb14-30"><a href="asignamos-nombres-a-cada-índice.html#cb14-30" tabindex="-1"></a>  <span class="fu">pivot_longer</span>(<span class="at">cols =</span> <span class="fu">c</span>(Tendencia, Estacionalidad, Ruido),</span>
+<span id="cb14-31"><a href="asignamos-nombres-a-cada-índice.html#cb14-31" tabindex="-1"></a>               <span class="at">names_to =</span> <span class="st">&quot;Caracteristica&quot;</span>,</span>
+<span id="cb14-32"><a href="asignamos-nombres-a-cada-índice.html#cb14-32" tabindex="-1"></a>               <span class="at">values_to =</span> <span class="st">&quot;Valor&quot;</span>)</span>
+<span id="cb14-33"><a href="asignamos-nombres-a-cada-índice.html#cb14-33" tabindex="-1"></a></span>
+<span id="cb14-34"><a href="asignamos-nombres-a-cada-índice.html#cb14-34" tabindex="-1"></a><span class="co"># 4. Crear el Heatmap</span></span>
+<span id="cb14-35"><a href="asignamos-nombres-a-cada-índice.html#cb14-35" tabindex="-1"></a><span class="fu">ggplot</span>(resumen_long, <span class="fu">aes</span>(<span class="at">x =</span> Caracteristica, <span class="at">y =</span> Indice, <span class="at">fill =</span> Valor)) <span class="sc">+</span></span>
+<span id="cb14-36"><a href="asignamos-nombres-a-cada-índice.html#cb14-36" tabindex="-1"></a>  <span class="fu">geom_tile</span>(<span class="at">color =</span> <span class="st">&quot;white&quot;</span>) <span class="sc">+</span></span>
+<span id="cb14-37"><a href="asignamos-nombres-a-cada-índice.html#cb14-37" tabindex="-1"></a>  <span class="fu">scale_fill_gradient2</span>(</span>
+<span id="cb14-38"><a href="asignamos-nombres-a-cada-índice.html#cb14-38" tabindex="-1"></a>    <span class="at">low =</span> <span class="st">&quot;red&quot;</span>, <span class="at">mid =</span> <span class="st">&quot;white&quot;</span>, <span class="at">high =</span> <span class="st">&quot;green&quot;</span>, <span class="at">midpoint =</span> <span class="dv">0</span>,</span>
+<span id="cb14-39"><a href="asignamos-nombres-a-cada-índice.html#cb14-39" tabindex="-1"></a>    <span class="at">limits =</span> <span class="fu">c</span>(<span class="sc">-</span><span class="dv">1</span>, <span class="dv">1</span>),</span>
+<span id="cb14-40"><a href="asignamos-nombres-a-cada-índice.html#cb14-40" tabindex="-1"></a>    <span class="at">name =</span> <span class="st">&quot;Nivel&quot;</span></span>
+<span id="cb14-41"><a href="asignamos-nombres-a-cada-índice.html#cb14-41" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb14-42"><a href="asignamos-nombres-a-cada-índice.html#cb14-42" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb14-43"><a href="asignamos-nombres-a-cada-índice.html#cb14-43" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">&quot;Mapa de Calor: Tendencia, Estacionalidad y Ruido por Índice&quot;</span>,</span>
+<span id="cb14-44"><a href="asignamos-nombres-a-cada-índice.html#cb14-44" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">&quot;Componente&quot;</span>,</span>
+<span id="cb14-45"><a href="asignamos-nombres-a-cada-índice.html#cb14-45" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">&quot;Índice Bursátil&quot;</span></span>
+<span id="cb14-46"><a href="asignamos-nombres-a-cada-índice.html#cb14-46" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb14-47"><a href="asignamos-nombres-a-cada-índice.html#cb14-47" tabindex="-1"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
+<span id="cb14-48"><a href="asignamos-nombres-a-cada-índice.html#cb14-48" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">angle =</span> <span class="dv">45</span>, <span class="at">hjust =</span> <span class="dv">1</span>))</span></code></pre></div>
+</details>
+<p><img src="_main_files/figure-html/unnamed-chunk-4-38.png" width="672" /></p>
+
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="desarrollo.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/USERNAME/REPO/edit/BRANCH/index.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["_main.pdf", "_main.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

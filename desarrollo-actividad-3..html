@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 4 Desarrollo Actividad 3. | Faros del Mercado: Índices Bursátiles que Guían la Economía Mundial.</title>
+  <meta name="description" content="Serie de tiempo" />
+  <meta name="generator" content="bookdown 0.42 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 4 Desarrollo Actividad 3. | Faros del Mercado: Índices Bursátiles que Guían la Economía Mundial." />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="Serie de tiempo" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 4 Desarrollo Actividad 3. | Faros del Mercado: Índices Bursátiles que Guían la Economía Mundial." />
+  
+  <meta name="twitter:description" content="Serie de tiempo" />
+  
+
+<meta name="author" content="Paolo De La Hoz Vicari, Genjis Ossa Gonzales" />
+
+
+<meta name="date" content="2025-05-05" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="desarrollo-actividad-2..html"/>
+<link rel="next" href="implementación-de-modelos..html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/codefolding-lua-1.1/codefolding-lua.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Series de Tiempo Acciones Mercado de Valores</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Descripción del proceso y justificación del análisis de los valores bursátiles en los principales mercados globales: Estados Unidos, Europa y Asia.</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#descripción-del-proyecto."><i class="fa fa-check"></i><b>1.1</b> Descripción del proyecto.</a></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#justificación-e-importancia-del-análisis."><i class="fa fa-check"></i><b>1.2</b> Justificación e importancia del análisis.</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="referencias.html"><a href="referencias.html"><i class="fa fa-check"></i><b>2</b> Referencias</a></li>
+<li class="chapter" data-level="3" data-path="desarrollo-actividad-2..html"><a href="desarrollo-actividad-2..html"><i class="fa fa-check"></i><b>3</b> Desarrollo Actividad 2.</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="desarrollo-actividad-2..html"><a href="desarrollo-actividad-2..html#preprocesamiento-de-datos."><i class="fa fa-check"></i><b>3.1</b> Preprocesamiento de datos.</a>
+<ul>
+<li class="chapter" data-level="3.1.1" data-path="desarrollo-actividad-2..html"><a href="desarrollo-actividad-2..html#cargar-las-librerías-necesarias"><i class="fa fa-check"></i><b>3.1.1</b> Cargar las librerías necesarias</a></li>
+<li class="chapter" data-level="3.1.2" data-path="desarrollo-actividad-2..html"><a href="desarrollo-actividad-2..html#definimos-los-índices-bursátiles-de-interés-yahoo-finance-symbols."><i class="fa fa-check"></i><b>3.1.2</b> Definimos los índices bursátiles de interés (Yahoo Finance symbols).</a></li>
+<li class="chapter" data-level="3.1.3" data-path="desarrollo-actividad-2..html"><a href="desarrollo-actividad-2..html#descargamos-los-datos-de-yahoo-finance-desde-el-2019."><i class="fa fa-check"></i><b>3.1.3</b> Descargamos los datos de Yahoo Finance desde el 2019.</a></li>
+<li class="chapter" data-level="3.1.4" data-path="desarrollo-actividad-2..html"><a href="desarrollo-actividad-2..html#asignamos-nombres-a-cada-índice."><i class="fa fa-check"></i><b>3.1.4</b> Asignamos nombres a cada índice.</a></li>
+<li class="chapter" data-level="3.1.5" data-path="desarrollo-actividad-2..html"><a href="desarrollo-actividad-2..html#extraemos-solo-los-precios-de-cierre-y-convertimos-cada-serie-en-un-objeto-zoo."><i class="fa fa-check"></i><b>3.1.5</b> Extraemos solo los precios de cierre y convertimos cada serie en un objeto zoo.</a></li>
+<li class="chapter" data-level="3.1.6" data-path="desarrollo-actividad-2..html"><a href="desarrollo-actividad-2..html#unimos-todas-las-series-zoo-en-un-solo-objeto."><i class="fa fa-check"></i><b>3.1.6</b> Unimos todas las series zoo en un solo objeto.</a></li>
+<li class="chapter" data-level="3.1.7" data-path="desarrollo-actividad-2..html"><a href="desarrollo-actividad-2..html#visualizamos-la-estructura."><i class="fa fa-check"></i><b>3.1.7</b> Visualizamos la estructura.</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="desarrollo-actividad-2..html"><a href="desarrollo-actividad-2..html#gráfico-de-evolución-histórica-de-todos-los-índices."><i class="fa fa-check"></i><b>3.2</b> Gráfico de evolución histórica de todos los índices.</a>
+<ul>
+<li class="chapter" data-level="3.2.1" data-path="desarrollo-actividad-2..html"><a href="desarrollo-actividad-2..html#convertir-a-un-data-frame-para-ggplot-y-reestructuración-en-formato-largo-para-gráficos."><i class="fa fa-check"></i><b>3.2.1</b> Convertir a un data frame para ggplot y reestructuración en formato largo para gráficos.</a></li>
+<li class="chapter" data-level="3.2.2" data-path="desarrollo-actividad-2..html"><a href="desarrollo-actividad-2..html#gráfico."><i class="fa fa-check"></i><b>3.2.2</b> Gráfico.</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="desarrollo-actividad-2..html"><a href="desarrollo-actividad-2..html#promedios-móviles"><i class="fa fa-check"></i><b>3.3</b> Promedios Móviles</a>
+<ul>
+<li class="chapter" data-level="3.3.1" data-path="desarrollo-actividad-2..html"><a href="desarrollo-actividad-2..html#aplicamos-promedio-móvil-7-30-90-días-para-cada-índice."><i class="fa fa-check"></i><b>3.3.1</b> Aplicamos promedio móvil (7, 30, 90 días) para cada índice.</a></li>
+<li class="chapter" data-level="3.3.2" data-path="desarrollo-actividad-2..html"><a href="desarrollo-actividad-2..html#asignamos-los-nombres-de-los-indices"><i class="fa fa-check"></i><b>3.3.2</b> Asignamos los nombres de los indices</a></li>
+<li class="chapter" data-level="3.3.3" data-path="desarrollo-actividad-2..html"><a href="desarrollo-actividad-2..html#graficamos-los-promedios-móviles-en-todos-los-indices-con-7-30-90-días"><i class="fa fa-check"></i><b>3.3.3</b> Graficamos los promedios móviles en todos los indices con (7, 30, 90 días)</a></li>
+</ul></li>
+<li class="chapter" data-level="3.4" data-path="desarrollo-actividad-2..html"><a href="desarrollo-actividad-2..html#autocorrelación-acf"><i class="fa fa-check"></i><b>3.4</b> AutoCorrelación ACF</a>
+<ul>
+<li class="chapter" data-level="3.4.1" data-path="desarrollo-actividad-2..html"><a href="desarrollo-actividad-2..html#graficamos-la-autocorrelación-acf-en-todos-los-indices."><i class="fa fa-check"></i><b>3.4.1</b> Graficamos la autocorrelación (ACF) en todos los indices.</a></li>
+</ul></li>
+<li class="chapter" data-level="3.5" data-path="desarrollo-actividad-2..html"><a href="desarrollo-actividad-2..html#descomposición-de-serie-de-tiempo."><i class="fa fa-check"></i><b>3.5</b> Descomposición de serie de tiempo.</a>
+<ul>
+<li class="chapter" data-level="3.5.1" data-path="desarrollo-actividad-2..html"><a href="desarrollo-actividad-2..html#descomponemos-y-graficamos-los-indices-bursatiles-utilizando-la-forma-clasica-y-stl-con-pasos-de-limpieza-e-implementación."><i class="fa fa-check"></i><b>3.5.1</b> Descomponemos y graficamos los indices bursatiles utilizando la forma clasica y STL con pasos de limpieza e implementación.</a></li>
+</ul></li>
+<li class="chapter" data-level="3.6" data-path="desarrollo-actividad-2..html"><a href="desarrollo-actividad-2..html#tabla-de-resumen-con-tendencia-estacionalidad-y-ruido-para-todos-los-indices."><i class="fa fa-check"></i><b>3.6</b> Tabla de resumen con tendencia, estacionalidad y ruido; para todos los indices.</a></li>
+<li class="chapter" data-level="3.7" data-path="desarrollo-actividad-2..html"><a href="desarrollo-actividad-2..html#mapa-de-calor"><i class="fa fa-check"></i><b>3.7</b> Mapa de calor</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="desarrollo-actividad-3..html"><a href="desarrollo-actividad-3..html"><i class="fa fa-check"></i><b>4</b> Desarrollo Actividad 3.</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="desarrollo-actividad-3..html"><a href="desarrollo-actividad-3..html#validación-de-supuestos-e-implementación-de-transformaciones-requeridas-en-las-series."><i class="fa fa-check"></i><b>4.1</b> Validación de supuestos e implementación de transformaciones requeridas en las series.</a>
+<ul>
+<li class="chapter" data-level="4.1.1" data-path="desarrollo-actividad-3..html"><a href="desarrollo-actividad-3..html#procesos-implementados."><i class="fa fa-check"></i><b>4.1.1</b> Procesos implementados.</a></li>
+<li class="chapter" data-level="4.1.2" data-path="desarrollo-actividad-3..html"><a href="desarrollo-actividad-3..html#resumen-del-análisis-de-estacionariedad-por-índice-bursátil"><i class="fa fa-check"></i><b>4.1.2</b> Resumen del análisis de estacionariedad por índice bursátil</a></li>
+<li class="chapter" data-level="4.1.3" data-path="desarrollo-actividad-3..html"><a href="desarrollo-actividad-3..html#creamos-el-objeto-tabla-del-resumen-final."><i class="fa fa-check"></i><b>4.1.3</b> Creamos el objeto tabla del resumen final.</a></li>
+<li class="chapter" data-level="4.1.4" data-path="desarrollo-actividad-3..html"><a href="desarrollo-actividad-3..html#implementación-de-procesos-sobre-los-índices-bursátile-en-tres-etapas-limpieza-transformación-si-aplica-y-verificación-de-estacionariedad-con-visualizaciones-intermedias."><i class="fa fa-check"></i><b>4.1.4</b> Implementación de procesos sobre los índices bursátile en tres etapas: limpieza, transformación (si aplica), y verificación de estacionariedad, con visualizaciones intermedias.</a></li>
+<li class="chapter" data-level="4.1.5" data-path="desarrollo-actividad-3..html"><a href="desarrollo-actividad-3..html#iteramos-los-indices-bursatiles-sobre-la-función-realizada."><i class="fa fa-check"></i><b>4.1.5</b> Iteramos los indices bursatiles sobre la función realizada.</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="desarrollo-actividad-3..html"><a href="desarrollo-actividad-3..html#tabla-de-resumen."><i class="fa fa-check"></i><b>4.2</b> Tabla de resumen.</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="implementación-de-modelos..html"><a href="implementación-de-modelos..html"><i class="fa fa-check"></i><b>5</b> Implementación de modelos.</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="implementación-de-modelos..html"><a href="implementación-de-modelos..html#validación-de-los-modelos-arima-diagnóstico-de-residuos."><i class="fa fa-check"></i><b>5.1</b> Validación de los Modelos ARIMA: Diagnóstico de Residuos.</a></li>
+<li class="chapter" data-level="5.2" data-path="implementación-de-modelos..html"><a href="implementación-de-modelos..html#resumen-por-índice-bursátil-diagnóstico-del-modelo-arima."><i class="fa fa-check"></i><b>5.2</b> Resumen por Índice Bursátil: Diagnóstico del Modelo ARIMA.</a></li>
+<li class="chapter" data-level="5.3" data-path="implementación-de-modelos..html"><a href="implementación-de-modelos..html#implementación-del-modelo-y-validación-de-supuestos."><i class="fa fa-check"></i><b>5.3</b> Implementación del modelo y validación de supuestos.</a></li>
+<li class="chapter" data-level="5.4" data-path="implementación-de-modelos..html"><a href="implementación-de-modelos..html#tabla-de-resumen.-1"><i class="fa fa-check"></i><b>5.4</b> Tabla de resumen.</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Faros del Mercado: Índices Bursátiles que Guían la Economía Mundial.</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="desarrollo-actividad-3." class="section level1 hasAnchor" number="4">
+<h1><span class="header-section-number">Chapter 4</span> Desarrollo Actividad 3.<a href="desarrollo-actividad-3..html#desarrollo-actividad-3." class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="validación-de-supuestos-e-implementación-de-transformaciones-requeridas-en-las-series." class="section level2 hasAnchor" number="4.1">
+<h2><span class="header-section-number">4.1</span> Validación de supuestos e implementación de transformaciones requeridas en las series.<a href="desarrollo-actividad-3..html#validación-de-supuestos-e-implementación-de-transformaciones-requeridas-en-las-series." class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="procesos-implementados." class="section level3 hasAnchor" number="4.1.1">
+<h3><span class="header-section-number">4.1.1</span> Procesos implementados.<a href="desarrollo-actividad-3..html#procesos-implementados." class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Antes de aplicar modelos de pronóstico, es esencial garantizar que las series de tiempo cumplan ciertos supuestos que permiten una estimación confiable y precisa. En esta etapa del análisis, nos enfocamos en evaluar tres aspectos fundamentales de cada índice bursátil: variabilidad relativa, estabilidad estadística (estacionariedad) y la necesidad de transformaciones.</p>
+<p><strong>1. Análisis de la Variabilidad Relativa.</strong></p>
+<p>Cada serie temporal fue evaluada con base en su coeficiente de variación (CV), que representa la relación entre la desviación estándar y la media de la serie. Este valor permite determinar si la serie presenta heterocedasticidad, es decir, si su variabilidad aumenta proporcionalmente con su nivel.</p>
+<p><strong>Criterio aplicado:</strong> Si el coeficiente de variación es mayor a 0.2, se considera que la serie tiene una alta variabilidad relativa y, por tanto, es candidata a una transformación logarítmica.</p>
+<p><strong>2. Transformación Logarítmica.</strong></p>
+<p>Cuando una serie mostró un CV &gt; 0.2, se aplicó una transformación logarítmica. Esta transformación tiene como objetivo estabilizar la varianza, lo cual es crucial para mantener la consistencia de los modelos predictivos. La transformación convierte cambios absolutos crecientes en cambios relativos constantes, facilitando la detección de patrones.</p>
+<p><strong>Resultado:</strong> En los índices SP500, Nasdaq y Nikkei225, por ejemplo, se aplicó esta transformación al superar el umbral de CV.</p>
+<p><strong>3. Evaluación de Estacionariedad con Dickey-Fuller.</strong></p>
+<p>Para verificar la estabilidad estadística de la serie en el tiempo (es decir, su estacionariedad), se utilizó la prueba de Dickey-Fuller aumentada (ADF). Esta prueba contrasta la hipótesis nula de que la serie no es estacionaria.</p>
+<p><strong>Criterio aplicado:</strong> Si el p-valor obtenido es menor a 0.05, se rechaza la hipótesis nula y se considera que la serie es estacionaria. Si el p-valor es mayor, se concluye que la serie no es estacionaria y se requiere una diferenciación.</p>
+<p><strong>4. Diferenciación:</strong></p>
+<p>Cuando fue necesario, se aplicó la diferenciación de primer o segundo orden, utilizando la función ndiffs(), hasta lograr que la serie cumpla con el criterio de estacionariedad (p-valor &lt; 0.05 en la prueba ADF aplicada a la serie diferenciada).</p>
+</div>
+<div id="resumen-del-análisis-de-estacionariedad-por-índice-bursátil" class="section level3 hasAnchor" number="4.1.2">
+<h3><span class="header-section-number">4.1.2</span> Resumen del análisis de estacionariedad por índice bursátil<a href="desarrollo-actividad-3..html#resumen-del-análisis-de-estacionariedad-por-índice-bursátil" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><strong>SP500</strong></p>
+<p>Transformación logarítmica: Sí (CV = 0.225)</p>
+<p>p-valor Dickey-Fuller: 0.00848</p>
+<p>¿Diferenciación aplicada?: No. La serie ya es estacionaria.</p>
+<p><strong>DowJones</strong></p>
+<p>Transformación logarítmica: No (CV = 0.165)</p>
+<p>p-valor Dickey-Fuller: 0.00413</p>
+<p>¿Diferenciación aplicada?: No. La serie ya es estacionaria.</p>
+<p><strong>Nasdaq</strong></p>
+<p>Transformación logarítmica: Sí (CV = 0.263)</p>
+<p>p-valor Dickey-Fuller: 0.02449</p>
+<p>¿Diferenciación aplicada?: No. La serie ya es estacionaria.</p>
+<p><strong>DAX</strong></p>
+<p>Transformación logarítmica: No (CV = 0.185)</p>
+<p>p-valor Dickey-Fuller: 0.09312 (no estacionaria)</p>
+<p>Diferenciación aplicada: Sí, orden 1</p>
+<p>p-valor tras diferenciación: 0.00000</p>
+<p>Resultado final: La serie diferenciada es estacionaria.</p>
+<p><strong>CAC40</strong></p>
+<p>Transformación logarítmica: No (CV = 0.156)</p>
+<p>p-valor Dickey-Fuller: 0.00247</p>
+<p>¿Diferenciación aplicada?: No. La serie ya es estacionaria.</p>
+<p><strong>FTSE100</strong></p>
+<p>Transformación logarítmica: No (CV = 0.093)</p>
+<p>p-valor Dickey-Fuller: 0.00478</p>
+<p>¿Diferenciación aplicada?: No. La serie ya es estacionaria.</p>
+<p><strong>Nikkei225</strong></p>
+<p>Transformación logarítmica: Sí (CV = 0.208)</p>
+<p>p-valor Dickey-Fuller: 0.00237</p>
+<p>¿Diferenciación aplicada?: No. La serie ya es estacionaria.</p>
+<p><strong>HangSeng</strong></p>
+<p>Transformación logarítmica: No (CV = 0.182)</p>
+<p>p-valor Dickey-Fuller: 0.01316</p>
+<p>¿Diferenciación aplicada?: No. La serie ya es estacionaria.</p>
+<p><strong>ShanghaiComposite</strong></p>
+<p>Transformación logarítmica: No (CV = 0.078)</p>
+<p>p-valor Dickey-Fuller: 0.00048</p>
+<p>¿Diferenciación aplicada?: No. La serie ya es estacionaria.</p>
+</div>
+<div id="creamos-el-objeto-tabla-del-resumen-final." class="section level3 hasAnchor" number="4.1.3">
+<h3><span class="header-section-number">4.1.3</span> Creamos el objeto tabla del resumen final.<a href="desarrollo-actividad-3..html#creamos-el-objeto-tabla-del-resumen-final." class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<details class=chunk-details><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
+<div class="sourceCode" id="cb18"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb18-1"><a href="desarrollo-actividad-3..html#cb18-1" tabindex="-1"></a><span class="co"># Crear tabla resumen para hallazgos</span></span>
+<span id="cb18-2"><a href="desarrollo-actividad-3..html#cb18-2" tabindex="-1"></a>resumen_estacionariedad <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
+<span id="cb18-3"><a href="desarrollo-actividad-3..html#cb18-3" tabindex="-1"></a>  <span class="at">Indice =</span> <span class="fu">character</span>(),</span>
+<span id="cb18-4"><a href="desarrollo-actividad-3..html#cb18-4" tabindex="-1"></a>  <span class="at">CV =</span> <span class="fu">numeric</span>(),</span>
+<span id="cb18-5"><a href="desarrollo-actividad-3..html#cb18-5" tabindex="-1"></a>  <span class="at">LogTransform =</span> <span class="fu">character</span>(),</span>
+<span id="cb18-6"><a href="desarrollo-actividad-3..html#cb18-6" tabindex="-1"></a>  <span class="at">DickeyFuller_pvalor =</span> <span class="fu">numeric</span>(),</span>
+<span id="cb18-7"><a href="desarrollo-actividad-3..html#cb18-7" tabindex="-1"></a>  <span class="at">Diferenciacion =</span> <span class="fu">character</span>(),</span>
+<span id="cb18-8"><a href="desarrollo-actividad-3..html#cb18-8" tabindex="-1"></a>  <span class="at">stringsAsFactors =</span> <span class="cn">FALSE</span></span>
+<span id="cb18-9"><a href="desarrollo-actividad-3..html#cb18-9" tabindex="-1"></a>)</span></code></pre></div>
+</details>
+</div>
+<div id="implementación-de-procesos-sobre-los-índices-bursátile-en-tres-etapas-limpieza-transformación-si-aplica-y-verificación-de-estacionariedad-con-visualizaciones-intermedias." class="section level3 hasAnchor" number="4.1.4">
+<h3><span class="header-section-number">4.1.4</span> Implementación de procesos sobre los índices bursátile en tres etapas: limpieza, transformación (si aplica), y verificación de estacionariedad, con visualizaciones intermedias.<a href="desarrollo-actividad-3..html#implementación-de-procesos-sobre-los-índices-bursátile-en-tres-etapas-limpieza-transformación-si-aplica-y-verificación-de-estacionariedad-con-visualizaciones-intermedias." class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<details class=chunk-details><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
+<div class="sourceCode" id="cb19"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb19-1"><a href="desarrollo-actividad-3..html#cb19-1" tabindex="-1"></a><span class="co"># Lista para guardar las series procesadas</span></span>
+<span id="cb19-2"><a href="desarrollo-actividad-3..html#cb19-2" tabindex="-1"></a>series_preparadas <span class="ot">&lt;-</span> <span class="fu">list</span>()</span>
+<span id="cb19-3"><a href="desarrollo-actividad-3..html#cb19-3" tabindex="-1"></a>analizar_estacionariedad_transformacion <span class="ot">&lt;-</span> <span class="cf">function</span>(serie_zoo, nombre_indice) {</span>
+<span id="cb19-4"><a href="desarrollo-actividad-3..html#cb19-4" tabindex="-1"></a>  </span>
+<span id="cb19-5"><a href="desarrollo-actividad-3..html#cb19-5" tabindex="-1"></a>  <span class="fu">cat</span>(<span class="st">&quot;</span><span class="sc">\n\n</span><span class="st">==================================================</span><span class="sc">\n</span><span class="st">&quot;</span>)</span>
+<span id="cb19-6"><a href="desarrollo-actividad-3..html#cb19-6" tabindex="-1"></a>  <span class="fu">cat</span>(<span class="st">&quot;ANÁLISIS DE:&quot;</span>, nombre_indice, <span class="st">&quot;</span><span class="sc">\n</span><span class="st">&quot;</span>)</span>
+<span id="cb19-7"><a href="desarrollo-actividad-3..html#cb19-7" tabindex="-1"></a>  <span class="fu">cat</span>(<span class="st">&quot;==================================================</span><span class="sc">\n</span><span class="st">&quot;</span>)</span>
+<span id="cb19-8"><a href="desarrollo-actividad-3..html#cb19-8" tabindex="-1"></a>  </span>
+<span id="cb19-9"><a href="desarrollo-actividad-3..html#cb19-9" tabindex="-1"></a>  <span class="co"># Limpieza de la serie</span></span>
+<span id="cb19-10"><a href="desarrollo-actividad-3..html#cb19-10" tabindex="-1"></a>  serie <span class="ot">&lt;-</span> <span class="fu">na.omit</span>(serie_zoo)</span>
+<span id="cb19-11"><a href="desarrollo-actividad-3..html#cb19-11" tabindex="-1"></a>  ts_serie <span class="ot">&lt;-</span> <span class="fu">ts</span>(<span class="fu">as.numeric</span>(serie), <span class="at">frequency =</span> <span class="dv">252</span>, <span class="at">start =</span> <span class="fu">c</span>(<span class="dv">2019</span>, <span class="dv">1</span>))</span>
+<span id="cb19-12"><a href="desarrollo-actividad-3..html#cb19-12" tabindex="-1"></a>  </span>
+<span id="cb19-13"><a href="desarrollo-actividad-3..html#cb19-13" tabindex="-1"></a>  <span class="co"># Coeficiente de variación</span></span>
+<span id="cb19-14"><a href="desarrollo-actividad-3..html#cb19-14" tabindex="-1"></a>  coef_var <span class="ot">&lt;-</span> <span class="fu">sd</span>(ts_serie) <span class="sc">/</span> <span class="fu">mean</span>(ts_serie)</span>
+<span id="cb19-15"><a href="desarrollo-actividad-3..html#cb19-15" tabindex="-1"></a>  necesita_log <span class="ot">&lt;-</span> coef_var <span class="sc">&gt;</span> <span class="fl">0.2</span></span>
+<span id="cb19-16"><a href="desarrollo-actividad-3..html#cb19-16" tabindex="-1"></a>  </span>
+<span id="cb19-17"><a href="desarrollo-actividad-3..html#cb19-17" tabindex="-1"></a>  <span class="cf">if</span> (necesita_log) {</span>
+<span id="cb19-18"><a href="desarrollo-actividad-3..html#cb19-18" tabindex="-1"></a>    ts_trans <span class="ot">&lt;-</span> <span class="fu">log</span>(ts_serie)</span>
+<span id="cb19-19"><a href="desarrollo-actividad-3..html#cb19-19" tabindex="-1"></a>    <span class="fu">plot</span>(ts_trans, <span class="at">main =</span> <span class="fu">paste</span>(<span class="st">&quot;Serie Transformada (Log) -&quot;</span>, nombre_indice),</span>
+<span id="cb19-20"><a href="desarrollo-actividad-3..html#cb19-20" tabindex="-1"></a>         <span class="at">xlab =</span> <span class="st">&quot;Tiempo&quot;</span>, <span class="at">ylab =</span> <span class="st">&quot;log(Precio)&quot;</span>)</span>
+<span id="cb19-21"><a href="desarrollo-actividad-3..html#cb19-21" tabindex="-1"></a>    <span class="fu">cat</span>(<span class="st">&quot;Transformación logarítmica aplicada (CV =&quot;</span>, <span class="fu">round</span>(coef_var, <span class="dv">3</span>), <span class="st">&quot;)</span><span class="sc">\n</span><span class="st">&quot;</span>)</span>
+<span id="cb19-22"><a href="desarrollo-actividad-3..html#cb19-22" tabindex="-1"></a>  } <span class="cf">else</span> {</span>
+<span id="cb19-23"><a href="desarrollo-actividad-3..html#cb19-23" tabindex="-1"></a>    ts_trans <span class="ot">&lt;-</span> ts_serie</span>
+<span id="cb19-24"><a href="desarrollo-actividad-3..html#cb19-24" tabindex="-1"></a>    <span class="fu">plot</span>(ts_trans, <span class="at">main =</span> <span class="fu">paste</span>(<span class="st">&quot;Serie Original -&quot;</span>, nombre_indice),</span>
+<span id="cb19-25"><a href="desarrollo-actividad-3..html#cb19-25" tabindex="-1"></a>         <span class="at">xlab =</span> <span class="st">&quot;Tiempo&quot;</span>, <span class="at">ylab =</span> <span class="st">&quot;Precio&quot;</span>)</span>
+<span id="cb19-26"><a href="desarrollo-actividad-3..html#cb19-26" tabindex="-1"></a>    <span class="fu">cat</span>(<span class="st">&quot;No se aplica transformación logarítmica (CV =&quot;</span>, <span class="fu">round</span>(coef_var, <span class="dv">3</span>), <span class="st">&quot;)</span><span class="sc">\n</span><span class="st">&quot;</span>)</span>
+<span id="cb19-27"><a href="desarrollo-actividad-3..html#cb19-27" tabindex="-1"></a>  }</span>
+<span id="cb19-28"><a href="desarrollo-actividad-3..html#cb19-28" tabindex="-1"></a>  </span>
+<span id="cb19-29"><a href="desarrollo-actividad-3..html#cb19-29" tabindex="-1"></a>  <span class="co"># Prueba Dickey-Fuller</span></span>
+<span id="cb19-30"><a href="desarrollo-actividad-3..html#cb19-30" tabindex="-1"></a>  prueba_df <span class="ot">&lt;-</span> <span class="fu">ur.df</span>(ts_trans, <span class="at">type =</span> <span class="st">&quot;trend&quot;</span>, <span class="at">selectlags =</span> <span class="st">&quot;AIC&quot;</span>)</span>
+<span id="cb19-31"><a href="desarrollo-actividad-3..html#cb19-31" tabindex="-1"></a>  pvalor_df <span class="ot">&lt;-</span> <span class="fu">summary</span>(prueba_df)<span class="sc">@</span>testreg<span class="sc">$</span>coefficients[<span class="dv">2</span>, <span class="dv">4</span>]</span>
+<span id="cb19-32"><a href="desarrollo-actividad-3..html#cb19-32" tabindex="-1"></a>  <span class="fu">cat</span>(<span class="st">&quot;p-valor Dickey-Fuller:&quot;</span>, <span class="fu">round</span>(pvalor_df, <span class="dv">5</span>), <span class="st">&quot;</span><span class="sc">\n</span><span class="st">&quot;</span>)</span>
+<span id="cb19-33"><a href="desarrollo-actividad-3..html#cb19-33" tabindex="-1"></a>  </span>
+<span id="cb19-34"><a href="desarrollo-actividad-3..html#cb19-34" tabindex="-1"></a>  <span class="co"># Evaluar si se requiere diferenciación</span></span>
+<span id="cb19-35"><a href="desarrollo-actividad-3..html#cb19-35" tabindex="-1"></a>  <span class="cf">if</span> (pvalor_df <span class="sc">&lt;</span> <span class="fl">0.05</span>) {</span>
+<span id="cb19-36"><a href="desarrollo-actividad-3..html#cb19-36" tabindex="-1"></a>    <span class="fu">cat</span>(<span class="st">&quot;La serie transformada es estacionaria. No se aplica diferenciación.</span><span class="sc">\n</span><span class="st">&quot;</span>)</span>
+<span id="cb19-37"><a href="desarrollo-actividad-3..html#cb19-37" tabindex="-1"></a>    serie_final <span class="ot">&lt;-</span> ts_trans</span>
+<span id="cb19-38"><a href="desarrollo-actividad-3..html#cb19-38" tabindex="-1"></a>    diferenciacion_txt <span class="ot">&lt;-</span> <span class="st">&quot;No&quot;</span></span>
+<span id="cb19-39"><a href="desarrollo-actividad-3..html#cb19-39" tabindex="-1"></a>  } <span class="cf">else</span> {</span>
+<span id="cb19-40"><a href="desarrollo-actividad-3..html#cb19-40" tabindex="-1"></a>    d <span class="ot">&lt;-</span> <span class="fu">ndiffs</span>(ts_trans)</span>
+<span id="cb19-41"><a href="desarrollo-actividad-3..html#cb19-41" tabindex="-1"></a>    ts_diff <span class="ot">&lt;-</span> <span class="fu">diff</span>(ts_trans, <span class="at">differences =</span> d)</span>
+<span id="cb19-42"><a href="desarrollo-actividad-3..html#cb19-42" tabindex="-1"></a>    <span class="fu">plot</span>(ts_diff, <span class="at">main =</span> <span class="fu">paste</span>(<span class="st">&quot;Serie Diferenciada (d =&quot;</span>, d, <span class="st">&quot;) -&quot;</span>, nombre_indice),</span>
+<span id="cb19-43"><a href="desarrollo-actividad-3..html#cb19-43" tabindex="-1"></a>         <span class="at">xlab =</span> <span class="st">&quot;Tiempo&quot;</span>, <span class="at">ylab =</span> <span class="st">&quot;Diferencia&quot;</span>)</span>
+<span id="cb19-44"><a href="desarrollo-actividad-3..html#cb19-44" tabindex="-1"></a>    <span class="fu">cat</span>(<span class="st">&quot;Serie NO estacionaria. Se aplica diferenciación de orden:&quot;</span>, d, <span class="st">&quot;</span><span class="sc">\n</span><span class="st">&quot;</span>)</span>
+<span id="cb19-45"><a href="desarrollo-actividad-3..html#cb19-45" tabindex="-1"></a>    </span>
+<span id="cb19-46"><a href="desarrollo-actividad-3..html#cb19-46" tabindex="-1"></a>    prueba_df_diff <span class="ot">&lt;-</span> <span class="fu">ur.df</span>(ts_diff, <span class="at">type =</span> <span class="st">&quot;drift&quot;</span>, <span class="at">selectlags =</span> <span class="st">&quot;AIC&quot;</span>)</span>
+<span id="cb19-47"><a href="desarrollo-actividad-3..html#cb19-47" tabindex="-1"></a>    pvalor_diff <span class="ot">&lt;-</span> <span class="fu">summary</span>(prueba_df_diff)<span class="sc">@</span>testreg<span class="sc">$</span>coefficients[<span class="dv">2</span>, <span class="dv">4</span>]</span>
+<span id="cb19-48"><a href="desarrollo-actividad-3..html#cb19-48" tabindex="-1"></a>    <span class="fu">cat</span>(<span class="st">&quot;p-valor Dickey-Fuller tras diferenciación:&quot;</span>, <span class="fu">round</span>(pvalor_diff, <span class="dv">5</span>), <span class="st">&quot;</span><span class="sc">\n</span><span class="st">&quot;</span>)</span>
+<span id="cb19-49"><a href="desarrollo-actividad-3..html#cb19-49" tabindex="-1"></a>    </span>
+<span id="cb19-50"><a href="desarrollo-actividad-3..html#cb19-50" tabindex="-1"></a>    <span class="cf">if</span> (pvalor_diff <span class="sc">&lt;</span> <span class="fl">0.05</span>) {</span>
+<span id="cb19-51"><a href="desarrollo-actividad-3..html#cb19-51" tabindex="-1"></a>      <span class="fu">cat</span>(<span class="st">&quot;La serie diferenciada ahora es estacionaria.</span><span class="sc">\n</span><span class="st">&quot;</span>)</span>
+<span id="cb19-52"><a href="desarrollo-actividad-3..html#cb19-52" tabindex="-1"></a>    } <span class="cf">else</span> {</span>
+<span id="cb19-53"><a href="desarrollo-actividad-3..html#cb19-53" tabindex="-1"></a>      <span class="fu">cat</span>(<span class="st">&quot;Incluso tras diferenciación, la serie NO es estacionaria.</span><span class="sc">\n</span><span class="st">&quot;</span>)</span>
+<span id="cb19-54"><a href="desarrollo-actividad-3..html#cb19-54" tabindex="-1"></a>    }</span>
+<span id="cb19-55"><a href="desarrollo-actividad-3..html#cb19-55" tabindex="-1"></a>    </span>
+<span id="cb19-56"><a href="desarrollo-actividad-3..html#cb19-56" tabindex="-1"></a>    serie_final <span class="ot">&lt;-</span> ts_diff</span>
+<span id="cb19-57"><a href="desarrollo-actividad-3..html#cb19-57" tabindex="-1"></a>    diferenciacion_txt <span class="ot">&lt;-</span> <span class="fu">paste</span>(<span class="st">&quot;Sí, orden&quot;</span>, d)</span>
+<span id="cb19-58"><a href="desarrollo-actividad-3..html#cb19-58" tabindex="-1"></a>  }</span>
+<span id="cb19-59"><a href="desarrollo-actividad-3..html#cb19-59" tabindex="-1"></a>  </span>
+<span id="cb19-60"><a href="desarrollo-actividad-3..html#cb19-60" tabindex="-1"></a>  <span class="co"># Guardar la serie transformada</span></span>
+<span id="cb19-61"><a href="desarrollo-actividad-3..html#cb19-61" tabindex="-1"></a>  series_preparadas[[nombre_indice]] <span class="ot">&lt;&lt;-</span> serie_final</span>
+<span id="cb19-62"><a href="desarrollo-actividad-3..html#cb19-62" tabindex="-1"></a>  </span>
+<span id="cb19-63"><a href="desarrollo-actividad-3..html#cb19-63" tabindex="-1"></a>  <span class="co"># Guardar en tabla resumen</span></span>
+<span id="cb19-64"><a href="desarrollo-actividad-3..html#cb19-64" tabindex="-1"></a>  resumen_estacionariedad <span class="ot">&lt;&lt;-</span> <span class="fu">rbind</span>(</span>
+<span id="cb19-65"><a href="desarrollo-actividad-3..html#cb19-65" tabindex="-1"></a>    resumen_estacionariedad,</span>
+<span id="cb19-66"><a href="desarrollo-actividad-3..html#cb19-66" tabindex="-1"></a>    <span class="fu">data.frame</span>(</span>
+<span id="cb19-67"><a href="desarrollo-actividad-3..html#cb19-67" tabindex="-1"></a>      <span class="at">Indice =</span> nombre_indice,</span>
+<span id="cb19-68"><a href="desarrollo-actividad-3..html#cb19-68" tabindex="-1"></a>      <span class="at">CV =</span> <span class="fu">round</span>(coef_var, <span class="dv">3</span>),</span>
+<span id="cb19-69"><a href="desarrollo-actividad-3..html#cb19-69" tabindex="-1"></a>      <span class="at">LogTransform =</span> <span class="fu">ifelse</span>(necesita_log, <span class="st">&quot;Sí&quot;</span>, <span class="st">&quot;No&quot;</span>),</span>
+<span id="cb19-70"><a href="desarrollo-actividad-3..html#cb19-70" tabindex="-1"></a>      <span class="at">DickeyFuller_pvalor =</span> <span class="fu">round</span>(pvalor_df, <span class="dv">5</span>),</span>
+<span id="cb19-71"><a href="desarrollo-actividad-3..html#cb19-71" tabindex="-1"></a>      <span class="at">Diferenciacion =</span> diferenciacion_txt</span>
+<span id="cb19-72"><a href="desarrollo-actividad-3..html#cb19-72" tabindex="-1"></a>    )</span>
+<span id="cb19-73"><a href="desarrollo-actividad-3..html#cb19-73" tabindex="-1"></a>  )</span>
+<span id="cb19-74"><a href="desarrollo-actividad-3..html#cb19-74" tabindex="-1"></a>}</span></code></pre></div>
+</details>
+</div>
+<div id="iteramos-los-indices-bursatiles-sobre-la-función-realizada." class="section level3 hasAnchor" number="4.1.5">
+<h3><span class="header-section-number">4.1.5</span> Iteramos los indices bursatiles sobre la función realizada.<a href="desarrollo-actividad-3..html#iteramos-los-indices-bursatiles-sobre-la-función-realizada." class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<details class=chunk-details><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
+<div class="sourceCode" id="cb20"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb20-1"><a href="desarrollo-actividad-3..html#cb20-1" tabindex="-1"></a><span class="cf">for</span> (indice <span class="cf">in</span> nombres_indices) {</span>
+<span id="cb20-2"><a href="desarrollo-actividad-3..html#cb20-2" tabindex="-1"></a>  <span class="fu">analizar_estacionariedad_transformacion</span>(cierres_zoo[[indice]], indice)</span>
+<span id="cb20-3"><a href="desarrollo-actividad-3..html#cb20-3" tabindex="-1"></a>}</span></code></pre></div>
+</details>
+<pre><code>## 
+## 
+## ==================================================
+## ANÁLISIS DE: SP500 
+## ==================================================</code></pre>
+<p><img src="_main_files/figure-html/unnamed-chunk-34-1.png" width="672" /></p>
+<pre><code>## Transformación logarítmica aplicada (CV = 0.225 )
+## p-valor Dickey-Fuller: 0.00848 
+## La serie transformada es estacionaria. No se aplica diferenciación.
+## 
+## 
+## ==================================================
+## ANÁLISIS DE: DowJones 
+## ==================================================</code></pre>
+<p><img src="_main_files/figure-html/unnamed-chunk-34-2.png" width="672" /></p>
+<pre><code>## No se aplica transformación logarítmica (CV = 0.165 )
+## p-valor Dickey-Fuller: 0.00413 
+## La serie transformada es estacionaria. No se aplica diferenciación.
+## 
+## 
+## ==================================================
+## ANÁLISIS DE: Nasdaq 
+## ==================================================</code></pre>
+<p><img src="_main_files/figure-html/unnamed-chunk-34-3.png" width="672" /></p>
+<pre><code>## Transformación logarítmica aplicada (CV = 0.263 )
+## p-valor Dickey-Fuller: 0.02449 
+## La serie transformada es estacionaria. No se aplica diferenciación.
+## 
+## 
+## ==================================================
+## ANÁLISIS DE: DAX 
+## ==================================================</code></pre>
+<p><img src="_main_files/figure-html/unnamed-chunk-34-4.png" width="672" /></p>
+<pre><code>## No se aplica transformación logarítmica (CV = 0.185 )
+## p-valor Dickey-Fuller: 0.09312</code></pre>
+<p><img src="_main_files/figure-html/unnamed-chunk-34-5.png" width="672" /></p>
+<pre><code>## Serie NO estacionaria. Se aplica diferenciación de orden: 1 
+## p-valor Dickey-Fuller tras diferenciación: 0 
+## La serie diferenciada ahora es estacionaria.
+## 
+## 
+## ==================================================
+## ANÁLISIS DE: CAC40 
+## ==================================================</code></pre>
+<p><img src="_main_files/figure-html/unnamed-chunk-34-6.png" width="672" /></p>
+<pre><code>## No se aplica transformación logarítmica (CV = 0.156 )
+## p-valor Dickey-Fuller: 0.00247 
+## La serie transformada es estacionaria. No se aplica diferenciación.
+## 
+## 
+## ==================================================
+## ANÁLISIS DE: FTSE100 
+## ==================================================</code></pre>
+<p><img src="_main_files/figure-html/unnamed-chunk-34-7.png" width="672" /></p>
+<pre><code>## No se aplica transformación logarítmica (CV = 0.093 )
+## p-valor Dickey-Fuller: 0.00478 
+## La serie transformada es estacionaria. No se aplica diferenciación.
+## 
+## 
+## ==================================================
+## ANÁLISIS DE: Nikkei225 
+## ==================================================</code></pre>
+<p><img src="_main_files/figure-html/unnamed-chunk-34-8.png" width="672" /></p>
+<pre><code>## Transformación logarítmica aplicada (CV = 0.208 )
+## p-valor Dickey-Fuller: 0.00237 
+## La serie transformada es estacionaria. No se aplica diferenciación.
+## 
+## 
+## ==================================================
+## ANÁLISIS DE: HangSeng 
+## ==================================================</code></pre>
+<p><img src="_main_files/figure-html/unnamed-chunk-34-9.png" width="672" /></p>
+<pre><code>## No se aplica transformación logarítmica (CV = 0.182 )
+## p-valor Dickey-Fuller: 0.01316 
+## La serie transformada es estacionaria. No se aplica diferenciación.
+## 
+## 
+## ==================================================
+## ANÁLISIS DE: ShanghaiComposite 
+## ==================================================</code></pre>
+<p><img src="_main_files/figure-html/unnamed-chunk-34-10.png" width="672" /></p>
+<pre><code>## No se aplica transformación logarítmica (CV = 0.078 )
+## p-valor Dickey-Fuller: 0.00048 
+## La serie transformada es estacionaria. No se aplica diferenciación.</code></pre>
+</div>
+</div>
+<div id="tabla-de-resumen." class="section level2 hasAnchor" number="4.2">
+<h2><span class="header-section-number">4.2</span> Tabla de resumen.<a href="desarrollo-actividad-3..html#tabla-de-resumen." class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<details class=chunk-details><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
+<div class="sourceCode" id="cb32"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb32-1"><a href="desarrollo-actividad-3..html#cb32-1" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">kable</span>(</span>
+<span id="cb32-2"><a href="desarrollo-actividad-3..html#cb32-2" tabindex="-1"></a>  resumen_estacionariedad,</span>
+<span id="cb32-3"><a href="desarrollo-actividad-3..html#cb32-3" tabindex="-1"></a>  <span class="at">caption =</span> <span class="st">&quot;Resumen del análisis de estacionariedad y transformaciones aplicadas por índice bursátil&quot;</span></span>
+<span id="cb32-4"><a href="desarrollo-actividad-3..html#cb32-4" tabindex="-1"></a>)</span></code></pre></div>
+</details>
+<table>
+<caption><span id="tab:unnamed-chunk-35">Table 4.1: </span>Resumen del análisis de estacionariedad y transformaciones aplicadas por índice bursátil</caption>
+<colgroup>
+<col width="25%" />
+<col width="8%" />
+<col width="18%" />
+<col width="27%" />
+<col width="20%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">Indice</th>
+<th align="right">CV</th>
+<th align="left">LogTransform</th>
+<th align="right">DickeyFuller_pvalor</th>
+<th align="left">Diferenciacion</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">SP500</td>
+<td align="right">0.225</td>
+<td align="left">Sí</td>
+<td align="right">0.00848</td>
+<td align="left">No</td>
+</tr>
+<tr class="even">
+<td align="left">DowJones</td>
+<td align="right">0.165</td>
+<td align="left">No</td>
+<td align="right">0.00413</td>
+<td align="left">No</td>
+</tr>
+<tr class="odd">
+<td align="left">Nasdaq</td>
+<td align="right">0.263</td>
+<td align="left">Sí</td>
+<td align="right">0.02449</td>
+<td align="left">No</td>
+</tr>
+<tr class="even">
+<td align="left">DAX</td>
+<td align="right">0.185</td>
+<td align="left">No</td>
+<td align="right">0.09312</td>
+<td align="left">Sí, orden 1</td>
+</tr>
+<tr class="odd">
+<td align="left">CAC40</td>
+<td align="right">0.156</td>
+<td align="left">No</td>
+<td align="right">0.00247</td>
+<td align="left">No</td>
+</tr>
+<tr class="even">
+<td align="left">FTSE100</td>
+<td align="right">0.093</td>
+<td align="left">No</td>
+<td align="right">0.00478</td>
+<td align="left">No</td>
+</tr>
+<tr class="odd">
+<td align="left">Nikkei225</td>
+<td align="right">0.208</td>
+<td align="left">Sí</td>
+<td align="right">0.00237</td>
+<td align="left">No</td>
+</tr>
+<tr class="even">
+<td align="left">HangSeng</td>
+<td align="right">0.182</td>
+<td align="left">No</td>
+<td align="right">0.01316</td>
+<td align="left">No</td>
+</tr>
+<tr class="odd">
+<td align="left">ShanghaiComposite</td>
+<td align="right">0.078</td>
+<td align="left">No</td>
+<td align="right">0.00048</td>
+<td align="left">No</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="desarrollo-actividad-2..html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="implementación-de-modelos..html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/USERNAME/REPO/edit/BRANCH/index.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["_main.pdf", "_main.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

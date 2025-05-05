@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 3 Desarrollo | Faros del Mercado: Índices Bursátiles que Guían la Economía Mundial.</title>
+  <meta name="description" content="Serie de tiempo" />
+  <meta name="generator" content="bookdown 0.42 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 3 Desarrollo | Faros del Mercado: Índices Bursátiles que Guían la Economía Mundial." />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="Serie de tiempo" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 3 Desarrollo | Faros del Mercado: Índices Bursátiles que Guían la Economía Mundial." />
+  
+  <meta name="twitter:description" content="Serie de tiempo" />
+  
+
+<meta name="author" content="Paolo De La Hoz Vicari, Genjis Ossa Gonzales" />
+
+
+<meta name="date" content="2025-05-05" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="referencias.html"/>
+<link rel="next" href="desarrollo-actividad-2..html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/codefolding-lua-1.1/codefolding-lua.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Series de Tiempo Acciones Mercado de Valores</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Descripción del proceso y justificación del análisis de los valores bursátiles en los principales mercados globales: Estados Unidos, Europa y Asia.</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#descripción-del-proyecto."><i class="fa fa-check"></i><b>1.1</b> Descripción del proyecto.</a></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#justificación-e-importancia-del-análisis."><i class="fa fa-check"></i><b>1.2</b> Justificación e importancia del análisis.</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="referencias.html"><a href="referencias.html"><i class="fa fa-check"></i><b>2</b> Referencias</a></li>
+<li class="chapter" data-level="3" data-path="desarrollo.html"><a href="desarrollo.html"><i class="fa fa-check"></i><b>3</b> Desarrollo</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="desarrollo.html"><a href="desarrollo.html#preprocesamiento-de-datos."><i class="fa fa-check"></i><b>3.1</b> Preprocesamiento de datos.</a>
+<ul>
+<li class="chapter" data-level="3.1.1" data-path="desarrollo.html"><a href="desarrollo.html#cargar-las-librerías-necesarias"><i class="fa fa-check"></i><b>3.1.1</b> Cargar las librerías necesarias</a></li>
+<li class="chapter" data-level="3.1.2" data-path="desarrollo.html"><a href="desarrollo.html#definimos-los-índices-bursátiles-de-interés-yahoo-finance-symbols."><i class="fa fa-check"></i><b>3.1.2</b> Definimos los índices bursátiles de interés (Yahoo Finance symbols).</a></li>
+<li class="chapter" data-level="3.1.3" data-path="desarrollo.html"><a href="desarrollo.html#descargamos-los-datos-de-yahoo-finance-desde-el-2019."><i class="fa fa-check"></i><b>3.1.3</b> Descargamos los datos de Yahoo Finance desde el 2019.</a></li>
+<li class="chapter" data-level="3.1.4" data-path="desarrollo.html"><a href="desarrollo.html#asignamos-nombres-a-cada-índice."><i class="fa fa-check"></i><b>3.1.4</b> Asignamos nombres a cada índice.</a></li>
+<li class="chapter" data-level="3.1.5" data-path="desarrollo.html"><a href="desarrollo.html#extraemos-solo-los-precios-de-cierre-y-convertimos-cada-serie-en-un-objeto-zoo."><i class="fa fa-check"></i><b>3.1.5</b> Extraemos solo los precios de cierre y convertimos cada serie en un objeto zoo.</a></li>
+<li class="chapter" data-level="3.1.6" data-path="desarrollo.html"><a href="desarrollo.html#unimos-todas-las-series-zoo-en-un-solo-objeto."><i class="fa fa-check"></i><b>3.1.6</b> Unimos todas las series zoo en un solo objeto.</a></li>
+<li class="chapter" data-level="3.1.7" data-path="desarrollo.html"><a href="desarrollo.html#visualizamos-la-estructura."><i class="fa fa-check"></i><b>3.1.7</b> Visualizamos la estructura.</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="desarrollo.html"><a href="desarrollo.html#gráfico-de-evolución-histórica-de-todos-los-índices."><i class="fa fa-check"></i><b>3.2</b> Gráfico de evolución histórica de todos los índices.</a>
+<ul>
+<li class="chapter" data-level="3.2.1" data-path="desarrollo.html"><a href="desarrollo.html#convertir-a-un-data-frame-para-ggplot-y-reestructuración-en-formato-largo-para-gráficos."><i class="fa fa-check"></i><b>3.2.1</b> Convertir a un data frame para ggplot y reestructuración en formato largo para gráficos.</a></li>
+<li class="chapter" data-level="3.2.2" data-path="desarrollo.html"><a href="desarrollo.html#gráfico."><i class="fa fa-check"></i><b>3.2.2</b> Gráfico.</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="desarrollo.html"><a href="desarrollo.html#promedios-móviles"><i class="fa fa-check"></i><b>3.3</b> Promedios Móviles</a>
+<ul>
+<li class="chapter" data-level="3.3.1" data-path="desarrollo.html"><a href="desarrollo.html#aplicamos-promedio-móvil-7-30-90-días-para-cada-índice."><i class="fa fa-check"></i><b>3.3.1</b> Aplicamos promedio móvil (7, 30, 90 días) para cada índice.</a></li>
+<li class="chapter" data-level="3.3.2" data-path="desarrollo.html"><a href="desarrollo.html#asignamos-los-nombres-de-los-indices"><i class="fa fa-check"></i><b>3.3.2</b> Asignamos los nombres de los indices</a></li>
+<li class="chapter" data-level="3.3.3" data-path="desarrollo.html"><a href="desarrollo.html#graficamos-los-promedios-móviles-en-todos-los-indices-con-7-30-90-días"><i class="fa fa-check"></i><b>3.3.3</b> Graficamos los promedios móviles en todos los indices con (7, 30, 90 días)</a></li>
+</ul></li>
+<li class="chapter" data-level="3.4" data-path="desarrollo.html"><a href="desarrollo.html#autocorrelación-acf"><i class="fa fa-check"></i><b>3.4</b> AutoCorrelación ACF</a>
+<ul>
+<li class="chapter" data-level="3.4.1" data-path="desarrollo.html"><a href="desarrollo.html#graficamos-la-autocorrelación-acf-en-todos-los-indices."><i class="fa fa-check"></i><b>3.4.1</b> Graficamos la autocorrelación (ACF) en todos los indices.</a></li>
+</ul></li>
+<li class="chapter" data-level="3.5" data-path="desarrollo.html"><a href="desarrollo.html#descomposición-de-serie-de-tiempo."><i class="fa fa-check"></i><b>3.5</b> Descomposición de serie de tiempo.</a>
+<ul>
+<li class="chapter" data-level="3.5.1" data-path="desarrollo.html"><a href="desarrollo.html#descomponemos-y-graficamos-los-indices-bursatiles-utilizando-la-forma-clasica-y-stl-con-pasos-de-limpieza-e-implementación."><i class="fa fa-check"></i><b>3.5.1</b> Descomponemos y graficamos los indices bursatiles utilizando la forma clasica y STL con pasos de limpieza e implementación.</a></li>
+</ul></li>
+<li class="chapter" data-level="3.6" data-path="desarrollo.html"><a href="desarrollo.html#tabla-de-resumen-con-tendencia-estacionalidad-y-ruido-para-todos-los-indices."><i class="fa fa-check"></i><b>3.6</b> Tabla de resumen con tendencia, estacionalidad y ruido; para todos los indices.</a></li>
+<li class="chapter" data-level="3.7" data-path="desarrollo.html"><a href="desarrollo.html#mapa-de-calor"><i class="fa fa-check"></i><b>3.7</b> Mapa de calor</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="desarrollo-actividad-2..html"><a href="desarrollo-actividad-2..html"><i class="fa fa-check"></i><b>4</b> Desarrollo Actividad 2.</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="desarrollo-actividad-2..html"><a href="desarrollo-actividad-2..html#implementación-de-modelos."><i class="fa fa-check"></i><b>4.1</b> Implementación de modelos.</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Faros del Mercado: Índices Bursátiles que Guían la Economía Mundial.</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="desarrollo" class="section level1 hasAnchor" number="3">
+<h1><span class="header-section-number">Chapter 3</span> Desarrollo<a href="desarrollo.html#desarrollo" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="preprocesamiento-de-datos." class="section level2 hasAnchor" number="3.1">
+<h2><span class="header-section-number">3.1</span> Preprocesamiento de datos.<a href="desarrollo.html#preprocesamiento-de-datos." class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="cargar-las-librerías-necesarias" class="section level3 hasAnchor" number="3.1.1">
+<h3><span class="header-section-number">3.1.1</span> Cargar las librerías necesarias<a href="desarrollo.html#cargar-las-librerías-necesarias" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<details class=chunk-details><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="desarrollo.html#cb1-1" tabindex="-1"></a><span class="fu">library</span>(quantmod)   <span class="co"># Para descargar datos financieros</span></span>
+<span id="cb1-2"><a href="desarrollo.html#cb1-2" tabindex="-1"></a><span class="fu">library</span>(dplyr)      <span class="co"># Para manipular datos</span></span>
+<span id="cb1-3"><a href="desarrollo.html#cb1-3" tabindex="-1"></a><span class="fu">library</span>(zoo)        <span class="co"># Para series de tiempo basadas en fechas</span></span>
+<span id="cb1-4"><a href="desarrollo.html#cb1-4" tabindex="-1"></a><span class="fu">library</span>(ggplot2)    <span class="co"># Para gráficos</span></span>
+<span id="cb1-5"><a href="desarrollo.html#cb1-5" tabindex="-1"></a><span class="fu">library</span>(tidyr)      <span class="co"># Para transformar los datos</span></span>
+<span id="cb1-6"><a href="desarrollo.html#cb1-6" tabindex="-1"></a><span class="fu">library</span>(urca)</span>
+<span id="cb1-7"><a href="desarrollo.html#cb1-7" tabindex="-1"></a><span class="fu">library</span>(tseries)</span>
+<span id="cb1-8"><a href="desarrollo.html#cb1-8" tabindex="-1"></a><span class="fu">library</span>(plotly)</span>
+<span id="cb1-9"><a href="desarrollo.html#cb1-9" tabindex="-1"></a><span class="fu">library</span>(forecast)</span></code></pre></div>
+</details>
+</div>
+<div id="definimos-los-índices-bursátiles-de-interés-yahoo-finance-symbols." class="section level3 hasAnchor" number="3.1.2">
+<h3><span class="header-section-number">3.1.2</span> Definimos los índices bursátiles de interés (Yahoo Finance symbols).<a href="desarrollo.html#definimos-los-índices-bursátiles-de-interés-yahoo-finance-symbols." class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<details class=chunk-details><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="desarrollo.html#cb2-1" tabindex="-1"></a>indices <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;^GSPC&quot;</span>, <span class="st">&quot;^DJI&quot;</span>, <span class="st">&quot;^IXIC&quot;</span>, <span class="st">&quot;^GDAXI&quot;</span>, <span class="st">&quot;^FCHI&quot;</span>, <span class="st">&quot;^FTSE&quot;</span>, <span class="st">&quot;^N225&quot;</span>, <span class="st">&quot;^HSI&quot;</span>, <span class="st">&quot;000001.SS&quot;</span>)</span></code></pre></div>
+</details>
+</div>
+<div id="descargamos-los-datos-de-yahoo-finance-desde-el-2019." class="section level3 hasAnchor" number="3.1.3">
+<h3><span class="header-section-number">3.1.3</span> Descargamos los datos de Yahoo Finance desde el 2019.<a href="desarrollo.html#descargamos-los-datos-de-yahoo-finance-desde-el-2019." class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<details class=chunk-details><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="desarrollo.html#cb3-1" tabindex="-1"></a>lista_indices <span class="ot">&lt;-</span> <span class="fu">lapply</span>(indices, <span class="cf">function</span>(ticker) {</span>
+<span id="cb3-2"><a href="desarrollo.html#cb3-2" tabindex="-1"></a>  <span class="fu">getSymbols</span>(ticker, <span class="at">src =</span> <span class="st">&quot;yahoo&quot;</span>, <span class="at">from =</span> <span class="st">&quot;2019-01-01&quot;</span>, <span class="at">auto.assign =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb3-3"><a href="desarrollo.html#cb3-3" tabindex="-1"></a>})</span></code></pre></div>
+</details>
+</div>
+<div id="asignamos-nombres-a-cada-índice." class="section level3 hasAnchor" number="3.1.4">
+<h3><span class="header-section-number">3.1.4</span> Asignamos nombres a cada índice.<a href="desarrollo.html#asignamos-nombres-a-cada-índice." class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<details class=chunk-details><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="desarrollo.html#cb4-1" tabindex="-1"></a>nombres_indices <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;SP500&quot;</span>, <span class="st">&quot;DowJones&quot;</span>, <span class="st">&quot;Nasdaq&quot;</span>, <span class="st">&quot;DAX&quot;</span>, <span class="st">&quot;CAC40&quot;</span>, <span class="st">&quot;FTSE100&quot;</span>, <span class="st">&quot;Nikkei225&quot;</span>, <span class="st">&quot;HangSeng&quot;</span>, <span class="st">&quot;ShanghaiComposite&quot;</span>)</span>
+<span id="cb4-2"><a href="desarrollo.html#cb4-2" tabindex="-1"></a><span class="fu">names</span>(lista_indices) <span class="ot">&lt;-</span> nombres_indices</span></code></pre></div>
+</details>
+</div>
+<div id="extraemos-solo-los-precios-de-cierre-y-convertimos-cada-serie-en-un-objeto-zoo." class="section level3 hasAnchor" number="3.1.5">
+<h3><span class="header-section-number">3.1.5</span> Extraemos solo los precios de cierre y convertimos cada serie en un objeto zoo.<a href="desarrollo.html#extraemos-solo-los-precios-de-cierre-y-convertimos-cada-serie-en-un-objeto-zoo." class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<details class=chunk-details><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="desarrollo.html#cb5-1" tabindex="-1"></a>cierres_zoo <span class="ot">&lt;-</span> <span class="fu">lapply</span>(lista_indices, <span class="cf">function</span>(serie) {</span>
+<span id="cb5-2"><a href="desarrollo.html#cb5-2" tabindex="-1"></a>  <span class="fu">zoo</span>(<span class="fu">Cl</span>(serie))  <span class="co"># Cl() extrae el &#39;Close&#39; y zoo() lo convierte a objeto de series de tiempo</span></span>
+<span id="cb5-3"><a href="desarrollo.html#cb5-3" tabindex="-1"></a>})</span></code></pre></div>
+</details>
+</div>
+<div id="unimos-todas-las-series-zoo-en-un-solo-objeto." class="section level3 hasAnchor" number="3.1.6">
+<h3><span class="header-section-number">3.1.6</span> Unimos todas las series zoo en un solo objeto.<a href="desarrollo.html#unimos-todas-las-series-zoo-en-un-solo-objeto." class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<details class=chunk-details><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="desarrollo.html#cb6-1" tabindex="-1"></a>cierres_merged <span class="ot">&lt;-</span> <span class="fu">do.call</span>(merge, cierres_zoo)</span></code></pre></div>
+</details>
+</div>
+<div id="visualizamos-la-estructura." class="section level3 hasAnchor" number="3.1.7">
+<h3><span class="header-section-number">3.1.7</span> Visualizamos la estructura.<a href="desarrollo.html#visualizamos-la-estructura." class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<details class=chunk-details><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="desarrollo.html#cb7-1" tabindex="-1"></a><span class="fu">head</span>(cierres_merged)</span></code></pre></div>
+</details>
+<pre><code>##            GSPC.Close DJI.Close IXIC.Close GDAXI.Close FCHI.Close FTSE.Close
+## 2019-01-02    2510.03  23346.24    6665.94    10580.19    4689.39     6734.2
+## 2019-01-03    2447.89  22686.22    6463.50    10416.66    4611.49     6692.7
+## 2019-01-04    2531.94  23433.16    6738.86    10767.69    4737.12     6837.4
+## 2019-01-07    2549.69  23531.35    6823.47    10747.81    4719.17     6810.9
+## 2019-01-08    2574.41  23787.45    6897.00    10803.98    4773.27     6861.6
+## 2019-01-09    2584.96  23879.12    6957.08    10893.32    4813.58     6906.6
+##            N225.Close HSI.Close 000001.SS.Close
+## 2019-01-02         NA  25130.35        2465.291
+## 2019-01-03         NA  25064.36        2464.363
+## 2019-01-04   19561.96  25626.03        2514.868
+## 2019-01-07   20038.97  25835.70        2533.089
+## 2019-01-08   20204.04  25875.45        2526.462
+## 2019-01-09   20427.06  26462.32        2544.345</code></pre>
+</div>
+</div>
+<div id="gráfico-de-evolución-histórica-de-todos-los-índices." class="section level2 hasAnchor" number="3.2">
+<h2><span class="header-section-number">3.2</span> Gráfico de evolución histórica de todos los índices.<a href="desarrollo.html#gráfico-de-evolución-histórica-de-todos-los-índices." class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="convertir-a-un-data-frame-para-ggplot-y-reestructuración-en-formato-largo-para-gráficos." class="section level3 hasAnchor" number="3.2.1">
+<h3><span class="header-section-number">3.2.1</span> Convertir a un data frame para ggplot y reestructuración en formato largo para gráficos.<a href="desarrollo.html#convertir-a-un-data-frame-para-ggplot-y-reestructuración-en-formato-largo-para-gráficos." class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<details class=chunk-details><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
+<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="desarrollo.html#cb9-1" tabindex="-1"></a>cierres_df <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">Date =</span> <span class="fu">index</span>(cierres_merged), <span class="fu">coredata</span>(cierres_merged))</span>
+<span id="cb9-2"><a href="desarrollo.html#cb9-2" tabindex="-1"></a></span>
+<span id="cb9-3"><a href="desarrollo.html#cb9-3" tabindex="-1"></a>cierres_long <span class="ot">&lt;-</span> cierres_df <span class="sc">%&gt;%</span></span>
+<span id="cb9-4"><a href="desarrollo.html#cb9-4" tabindex="-1"></a>  <span class="fu">pivot_longer</span>(<span class="at">cols =</span> <span class="sc">-</span>Date, <span class="at">names_to =</span> <span class="st">&quot;Indice&quot;</span>, <span class="at">values_to =</span> <span class="st">&quot;Cierre&quot;</span>)</span></code></pre></div>
+</details>
+</div>
+<div id="gráfico." class="section level3 hasAnchor" number="3.2.2">
+<h3><span class="header-section-number">3.2.2</span> Gráfico.<a href="desarrollo.html#gráfico." class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>El gráfico muestra la evolución diaria de los precios de cierre de los principales índices bursátiles a nivel mundial desde 2019 hasta la fecha actual. Cada línea representa un índice diferente, con escalas independientes de precio en el eje Y y fechas en el eje X.</p>
+<p>Eje X: Fecha (de 2019 a 2025).</p>
+<p>Eje Y: Precio de cierre (escala real de cada índice).</p>
+<p>Variables representadas: SP500, Dow Jones, Nasdaq, DAX, CAC40, FTSE100, Nikkei225, Hang Seng, Shanghai Composite.</p>
+<details class=chunk-details><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="desarrollo.html#cb10-1" tabindex="-1"></a><span class="fu">ggplot</span>(cierres_long, <span class="fu">aes</span>(<span class="at">x =</span> Date, <span class="at">y =</span> Cierre, <span class="at">color =</span> Indice)) <span class="sc">+</span></span>
+<span id="cb10-2"><a href="desarrollo.html#cb10-2" tabindex="-1"></a>  <span class="fu">geom_line</span>() <span class="sc">+</span></span>
+<span id="cb10-3"><a href="desarrollo.html#cb10-3" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb10-4"><a href="desarrollo.html#cb10-4" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">&quot;Evolución histórica de índices bursátiles (2019-Actualidad)&quot;</span>,</span>
+<span id="cb10-5"><a href="desarrollo.html#cb10-5" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">&quot;Fecha&quot;</span>,</span>
+<span id="cb10-6"><a href="desarrollo.html#cb10-6" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">&quot;Precio de Cierre&quot;</span>,</span>
+<span id="cb10-7"><a href="desarrollo.html#cb10-7" tabindex="-1"></a>    <span class="at">color =</span> <span class="st">&quot;Índice&quot;</span></span>
+<span id="cb10-8"><a href="desarrollo.html#cb10-8" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb10-9"><a href="desarrollo.html#cb10-9" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code></pre></div>
+</details>
+<p><img src="_main_files/figure-html/unnamed-chunk-8-1.png" width="672" /></p>
+</div>
+</div>
+<div id="promedios-móviles" class="section level2 hasAnchor" number="3.3">
+<h2><span class="header-section-number">3.3</span> Promedios Móviles<a href="desarrollo.html#promedios-móviles" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="aplicamos-promedio-móvil-7-30-90-días-para-cada-índice." class="section level3 hasAnchor" number="3.3.1">
+<h3><span class="header-section-number">3.3.1</span> Aplicamos promedio móvil (7, 30, 90 días) para cada índice.<a href="desarrollo.html#aplicamos-promedio-móvil-7-30-90-días-para-cada-índice." class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<details class=chunk-details><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
+<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="desarrollo.html#cb11-1" tabindex="-1"></a>promedios_moviles <span class="ot">&lt;-</span> <span class="fu">lapply</span>(cierres_zoo, <span class="cf">function</span>(serie) {</span>
+<span id="cb11-2"><a href="desarrollo.html#cb11-2" tabindex="-1"></a>  <span class="fu">data.frame</span>(</span>
+<span id="cb11-3"><a href="desarrollo.html#cb11-3" tabindex="-1"></a>    <span class="at">Fecha =</span> <span class="fu">index</span>(serie),</span>
+<span id="cb11-4"><a href="desarrollo.html#cb11-4" tabindex="-1"></a>    <span class="at">Original =</span> <span class="fu">as.numeric</span>(serie),</span>
+<span id="cb11-5"><a href="desarrollo.html#cb11-5" tabindex="-1"></a>    <span class="at">MA_7 =</span> <span class="fu">as.numeric</span>(<span class="fu">rollmean</span>(serie, <span class="at">k =</span> <span class="dv">7</span>, <span class="at">fill =</span> <span class="cn">NA</span>, <span class="at">align =</span> <span class="st">&quot;right&quot;</span>)),</span>
+<span id="cb11-6"><a href="desarrollo.html#cb11-6" tabindex="-1"></a>    <span class="at">MA_30 =</span> <span class="fu">as.numeric</span>(<span class="fu">rollmean</span>(serie, <span class="at">k =</span> <span class="dv">30</span>, <span class="at">fill =</span> <span class="cn">NA</span>, <span class="at">align =</span> <span class="st">&quot;right&quot;</span>)),</span>
+<span id="cb11-7"><a href="desarrollo.html#cb11-7" tabindex="-1"></a>    <span class="at">MA_90 =</span> <span class="fu">as.numeric</span>(<span class="fu">rollmean</span>(serie, <span class="at">k =</span> <span class="dv">90</span>, <span class="at">fill =</span> <span class="cn">NA</span>, <span class="at">align =</span> <span class="st">&quot;right&quot;</span>))</span>
+<span id="cb11-8"><a href="desarrollo.html#cb11-8" tabindex="-1"></a>  )</span>
+<span id="cb11-9"><a href="desarrollo.html#cb11-9" tabindex="-1"></a>})</span></code></pre></div>
+</details>
+</div>
+<div id="asignamos-los-nombres-de-los-indices" class="section level3 hasAnchor" number="3.3.2">
+<h3><span class="header-section-number">3.3.2</span> Asignamos los nombres de los indices<a href="desarrollo.html#asignamos-los-nombres-de-los-indices" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<details class=chunk-details><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
+<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="desarrollo.html#cb12-1" tabindex="-1"></a><span class="fu">names</span>(promedios_moviles) <span class="ot">&lt;-</span> nombres_indices</span></code></pre></div>
+</details>
+</div>
+<div id="graficamos-los-promedios-móviles-en-todos-los-indices-con-7-30-90-días" class="section level3 hasAnchor" number="3.3.3">
+<h3><span class="header-section-number">3.3.3</span> Graficamos los promedios móviles en todos los indices con (7, 30, 90 días)<a href="desarrollo.html#graficamos-los-promedios-móviles-en-todos-los-indices-con-7-30-90-días" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><strong>SP500:</strong> Crecimiento fuerte post-pandemia, promedios móviles confirman tendencia alcista estructural, recuperación rápida tras caídas.</p>
+<p><strong>Dow Jones:</strong> Crecimiento sostenido, mayor sensibilidad a choques globales, MA_90 actúa como soporte de tendencia.</p>
+<p><strong>Nasdaq:</strong> Expansión explosiva durante 2020-2022, correcciones posteriores, fuerte volatilidad de corto plazo.</p>
+<p><strong>DAX:</strong> Recuperación sólida, crecimiento más moderado que SP500, volatilidad controlada en 2023-2024.</p>
+<p><strong>CAC40:</strong> Crecimiento progresivo, recuperación fuerte post-pandemia, estabilidad pese a contexto europeo incierto.</p>
+<p><strong>FTSE100:</strong> Recuperación más lenta, crecimiento más estable pero menos acelerado, reflejando impacto de Brexit y COVID-19.</p>
+<p><strong>Nikkei225:</strong> Crecimiento firme y constante, volatilidad moderada, estabilidad asiática frente a shocks externos.</p>
+<p><strong>HangSeng:</strong> Tendencia decreciente persistente, afectado por tensiones políticas y regulación, no logra recuperación estructural.</p>
+<p><strong>Shanghai Composite:</strong> Oscilaciones cíclicas sin tendencia fuerte, movimientos suaves ligados a política económica interna.</p>
+<details class=chunk-details><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
+<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="desarrollo.html#cb13-1" tabindex="-1"></a>graficar_promedios_moviles <span class="ot">&lt;-</span> <span class="cf">function</span>(df, nombre_indice) {</span>
+<span id="cb13-2"><a href="desarrollo.html#cb13-2" tabindex="-1"></a>  df_long <span class="ot">&lt;-</span> df <span class="sc">%&gt;%</span></span>
+<span id="cb13-3"><a href="desarrollo.html#cb13-3" tabindex="-1"></a>    <span class="fu">pivot_longer</span>(<span class="at">cols =</span> <span class="fu">c</span>(<span class="st">&quot;Original&quot;</span>, <span class="st">&quot;MA_7&quot;</span>, <span class="st">&quot;MA_30&quot;</span>, <span class="st">&quot;MA_90&quot;</span>), </span>
+<span id="cb13-4"><a href="desarrollo.html#cb13-4" tabindex="-1"></a>                 <span class="at">names_to =</span> <span class="st">&quot;Serie&quot;</span>, <span class="at">values_to =</span> <span class="st">&quot;Valor&quot;</span>)</span>
+<span id="cb13-5"><a href="desarrollo.html#cb13-5" tabindex="-1"></a>  </span>
+<span id="cb13-6"><a href="desarrollo.html#cb13-6" tabindex="-1"></a>  <span class="fu">ggplot</span>(df_long, <span class="fu">aes</span>(<span class="at">x =</span> Fecha, <span class="at">y =</span> Valor, <span class="at">color =</span> Serie)) <span class="sc">+</span></span>
+<span id="cb13-7"><a href="desarrollo.html#cb13-7" tabindex="-1"></a>    <span class="fu">geom_line</span>() <span class="sc">+</span></span>
+<span id="cb13-8"><a href="desarrollo.html#cb13-8" tabindex="-1"></a>    <span class="fu">labs</span>(</span>
+<span id="cb13-9"><a href="desarrollo.html#cb13-9" tabindex="-1"></a>      <span class="at">title =</span> <span class="fu">paste</span>(nombre_indice, <span class="st">&quot;- Evolución y Promedios Móviles (7, 30, 90 días)&quot;</span>),</span>
+<span id="cb13-10"><a href="desarrollo.html#cb13-10" tabindex="-1"></a>      <span class="at">x =</span> <span class="st">&quot;Fecha&quot;</span>,</span>
+<span id="cb13-11"><a href="desarrollo.html#cb13-11" tabindex="-1"></a>      <span class="at">y =</span> <span class="st">&quot;Precio&quot;</span>,</span>
+<span id="cb13-12"><a href="desarrollo.html#cb13-12" tabindex="-1"></a>      <span class="at">color =</span> <span class="st">&quot;Serie&quot;</span></span>
+<span id="cb13-13"><a href="desarrollo.html#cb13-13" tabindex="-1"></a>    ) <span class="sc">+</span></span>
+<span id="cb13-14"><a href="desarrollo.html#cb13-14" tabindex="-1"></a>    <span class="fu">theme_minimal</span>()</span>
+<span id="cb13-15"><a href="desarrollo.html#cb13-15" tabindex="-1"></a>}</span>
+<span id="cb13-16"><a href="desarrollo.html#cb13-16" tabindex="-1"></a></span>
+<span id="cb13-17"><a href="desarrollo.html#cb13-17" tabindex="-1"></a><span class="cf">for</span> (indice <span class="cf">in</span> nombres_indices) {</span>
+<span id="cb13-18"><a href="desarrollo.html#cb13-18" tabindex="-1"></a>  <span class="fu">print</span>(<span class="fu">graficar_promedios_moviles</span>(promedios_moviles[[indice]], indice))</span>
+<span id="cb13-19"><a href="desarrollo.html#cb13-19" tabindex="-1"></a>}</span></code></pre></div>
+</details>
+<p><img src="_main_files/figure-html/unnamed-chunk-11-1.png" width="672" /><img src="_main_files/figure-html/unnamed-chunk-11-2.png" width="672" /><img src="_main_files/figure-html/unnamed-chunk-11-3.png" width="672" /><img src="_main_files/figure-html/unnamed-chunk-11-4.png" width="672" /><img src="_main_files/figure-html/unnamed-chunk-11-5.png" width="672" /><img src="_main_files/figure-html/unnamed-chunk-11-6.png" width="672" /><img src="_main_files/figure-html/unnamed-chunk-11-7.png" width="672" /><img src="_main_files/figure-html/unnamed-chunk-11-8.png" width="672" /><img src="_main_files/figure-html/unnamed-chunk-11-9.png" width="672" /></p>
+</div>
+</div>
+<div id="autocorrelación-acf" class="section level2 hasAnchor" number="3.4">
+<h2><span class="header-section-number">3.4</span> AutoCorrelación ACF<a href="desarrollo.html#autocorrelación-acf" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="graficamos-la-autocorrelación-acf-en-todos-los-indices." class="section level3 hasAnchor" number="3.4.1">
+<h3><span class="header-section-number">3.4.1</span> Graficamos la autocorrelación (ACF) en todos los indices.<a href="desarrollo.html#graficamos-la-autocorrelación-acf-en-todos-los-indices." class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><strong>SP500:</strong> Presenta autocorrelaciones extremadamente altas en todos los lags. Indica muy alta dependencia temporal, el precio de hoy está casi totalmente explicado por el precio de ayer, anteayer, etc.</p>
+<p><strong>DowJones:</strong> Patrón idéntico al SP500, autocorrelaciones cercanas a 1 hasta el lag 30. Confirma fuerte persistencia y memoria de largo plazo en el comportamiento de precios.</p>
+<p><strong>Nasdaq:</strong> Igual que SP500 y DowJones, persistencia total en los precios diarios. Movimiento fuertemente dependiente de valores anteriores. Alta estabilidad interna.</p>
+<p><strong>DAX:</strong> Alta autocorrelación, pero comienza a decrecer muy lentamente conforme aumenta el lag. Muestra persistencia, aunque ligeramente menos rígida que en índices estadounidenses.</p>
+<p><strong>CAC40:</strong> Comportamiento muy similar al DAX con alta autocorrelación inicial, pero con una leve pendiente descendente a partir del lag 10. Indica ligero debilitamiento de la dependencia en el tiempo.</p>
+<p><strong>FTSE100:</strong> Alta autocorrelación, pero con una pendiente descendente más pronunciada que en DAX o CAC40. La dependencia de precios pasados existe pero se va diluyendo más rápido.</p>
+<p><strong>Nikkei225:</strong> Persistencia fuerte (autocorrelaciones cercanas a 1), aunque ligeramente más “sueltas” que en los mercados occidentales. Los precios tienden a ser explicados por valores pasados, pero hay algo más de ruido.</p>
+<p><strong>HangSeng:</strong> Alta autocorrelación inicial, pero decayendo progresivamente con el lag. Refleja una memoria de precios, aunque menos estable y más volátil que SP500 o DowJones.</p>
+<p><strong>Shanghai Composite:</strong> Es el único donde la autocorrelación desciende de forma continua y más marcada a medida que crece el lag. Esto indica que la memoria de los precios se erosiona rápidamente en China. Mayor aleatoriedad y menor persistencia estructural en los precios.</p>
+<details class=chunk-details><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
+<div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb14-1"><a href="desarrollo.html#cb14-1" tabindex="-1"></a>graficar_acf <span class="ot">&lt;-</span> <span class="cf">function</span>(serie, nombre_indice) {</span>
+<span id="cb14-2"><a href="desarrollo.html#cb14-2" tabindex="-1"></a>  serie_sin_na <span class="ot">&lt;-</span> <span class="fu">na.omit</span>(serie)  <span class="co"># 1. Eliminar los valores faltantes (NA)</span></span>
+<span id="cb14-3"><a href="desarrollo.html#cb14-3" tabindex="-1"></a>  <span class="fu">acf</span>(<span class="fu">coredata</span>(serie_sin_na),     <span class="co"># 2. Calcula autocorrelaciones</span></span>
+<span id="cb14-4"><a href="desarrollo.html#cb14-4" tabindex="-1"></a>      <span class="at">lag.max =</span> <span class="dv">30</span>,               <span class="co"># 3. Mide autocorrelaciones hasta 30 rezagos (lags)</span></span>
+<span id="cb14-5"><a href="desarrollo.html#cb14-5" tabindex="-1"></a>      <span class="at">main =</span> <span class="fu">paste</span>(<span class="st">&quot;Autocorrelación (ACF) -&quot;</span>, nombre_indice))  <span class="co"># 4. Título del gráfico</span></span>
+<span id="cb14-6"><a href="desarrollo.html#cb14-6" tabindex="-1"></a>}</span>
+<span id="cb14-7"><a href="desarrollo.html#cb14-7" tabindex="-1"></a></span>
+<span id="cb14-8"><a href="desarrollo.html#cb14-8" tabindex="-1"></a><span class="co"># Aplicar la función a todos los índices</span></span>
+<span id="cb14-9"><a href="desarrollo.html#cb14-9" tabindex="-1"></a><span class="cf">for</span> (indice <span class="cf">in</span> nombres_indices) {</span>
+<span id="cb14-10"><a href="desarrollo.html#cb14-10" tabindex="-1"></a>  <span class="fu">graficar_acf</span>(cierres_zoo[[indice]], indice)</span>
+<span id="cb14-11"><a href="desarrollo.html#cb14-11" tabindex="-1"></a>}</span></code></pre></div>
+</details>
+<p><img src="_main_files/figure-html/unnamed-chunk-12-1.png" width="672" /><img src="_main_files/figure-html/unnamed-chunk-12-2.png" width="672" /><img src="_main_files/figure-html/unnamed-chunk-12-3.png" width="672" /><img src="_main_files/figure-html/unnamed-chunk-12-4.png" width="672" /><img src="_main_files/figure-html/unnamed-chunk-12-5.png" width="672" /><img src="_main_files/figure-html/unnamed-chunk-12-6.png" width="672" /><img src="_main_files/figure-html/unnamed-chunk-12-7.png" width="672" /><img src="_main_files/figure-html/unnamed-chunk-12-8.png" width="672" /><img src="_main_files/figure-html/unnamed-chunk-12-9.png" width="672" /></p>
+</div>
+</div>
+<div id="descomposición-de-serie-de-tiempo." class="section level2 hasAnchor" number="3.5">
+<h2><span class="header-section-number">3.5</span> Descomposición de serie de tiempo.<a href="desarrollo.html#descomposición-de-serie-de-tiempo." class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="descomponemos-y-graficamos-los-indices-bursatiles-utilizando-la-forma-clasica-y-stl-con-pasos-de-limpieza-e-implementación." class="section level3 hasAnchor" number="3.5.1">
+<h3><span class="header-section-number">3.5.1</span> Descomponemos y graficamos los indices bursatiles utilizando la forma clasica y STL con pasos de limpieza e implementación.<a href="desarrollo.html#descomponemos-y-graficamos-los-indices-bursatiles-utilizando-la-forma-clasica-y-stl-con-pasos-de-limpieza-e-implementación." class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<details class=chunk-details><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
+<div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb15-1"><a href="desarrollo.html#cb15-1" tabindex="-1"></a>descomponer_y_graficar <span class="ot">&lt;-</span> <span class="cf">function</span>(serie_zoo, nombre_indice) {</span>
+<span id="cb15-2"><a href="desarrollo.html#cb15-2" tabindex="-1"></a>  </span>
+<span id="cb15-3"><a href="desarrollo.html#cb15-3" tabindex="-1"></a>  <span class="co"># Eliminamos NA</span></span>
+<span id="cb15-4"><a href="desarrollo.html#cb15-4" tabindex="-1"></a>  serie_limpia <span class="ot">&lt;-</span> <span class="fu">na.omit</span>(serie_zoo)</span>
+<span id="cb15-5"><a href="desarrollo.html#cb15-5" tabindex="-1"></a>  </span>
+<span id="cb15-6"><a href="desarrollo.html#cb15-6" tabindex="-1"></a>  <span class="co"># Convertimos a vector numérico puro</span></span>
+<span id="cb15-7"><a href="desarrollo.html#cb15-7" tabindex="-1"></a>  valores_numericos <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(serie_limpia)</span>
+<span id="cb15-8"><a href="desarrollo.html#cb15-8" tabindex="-1"></a>  </span>
+<span id="cb15-9"><a href="desarrollo.html#cb15-9" tabindex="-1"></a>  <span class="co"># Convertimos a objeto ts</span></span>
+<span id="cb15-10"><a href="desarrollo.html#cb15-10" tabindex="-1"></a>  serie_ts <span class="ot">&lt;-</span> <span class="fu">ts</span>(valores_numericos,</span>
+<span id="cb15-11"><a href="desarrollo.html#cb15-11" tabindex="-1"></a>                 <span class="at">start =</span> <span class="fu">c</span>(<span class="dv">2019</span>, <span class="dv">1</span>),</span>
+<span id="cb15-12"><a href="desarrollo.html#cb15-12" tabindex="-1"></a>                 <span class="at">frequency =</span> <span class="dv">252</span>)</span>
+<span id="cb15-13"><a href="desarrollo.html#cb15-13" tabindex="-1"></a>  </span>
+<span id="cb15-14"><a href="desarrollo.html#cb15-14" tabindex="-1"></a>  <span class="co"># Graficamos descomposición clásica</span></span>
+<span id="cb15-15"><a href="desarrollo.html#cb15-15" tabindex="-1"></a>  <span class="fu">plot</span>(<span class="fu">decompose</span>(serie_ts))</span>
+<span id="cb15-16"><a href="desarrollo.html#cb15-16" tabindex="-1"></a>  <span class="fu">mtext</span>(<span class="fu">paste</span>(<span class="st">&quot;Descomposición Clásica -&quot;</span>, nombre_indice), <span class="at">side =</span> <span class="dv">3</span>, <span class="at">line =</span> <span class="dv">1</span>, <span class="at">cex =</span> <span class="fl">1.5</span>)</span>
+<span id="cb15-17"><a href="desarrollo.html#cb15-17" tabindex="-1"></a>  </span>
+<span id="cb15-18"><a href="desarrollo.html#cb15-18" tabindex="-1"></a>  <span class="co"># Graficamos descomposición STL</span></span>
+<span id="cb15-19"><a href="desarrollo.html#cb15-19" tabindex="-1"></a>  <span class="fu">plot</span>(<span class="fu">stl</span>(serie_ts, <span class="at">s.window =</span> <span class="st">&quot;periodic&quot;</span>))</span>
+<span id="cb15-20"><a href="desarrollo.html#cb15-20" tabindex="-1"></a>  <span class="fu">mtext</span>(<span class="fu">paste</span>(<span class="st">&quot;Descomposición STL -&quot;</span>, nombre_indice), <span class="at">side =</span> <span class="dv">3</span>, <span class="at">line =</span> <span class="dv">1</span>, <span class="at">cex =</span> <span class="fl">1.5</span>)</span>
+<span id="cb15-21"><a href="desarrollo.html#cb15-21" tabindex="-1"></a>}</span>
+<span id="cb15-22"><a href="desarrollo.html#cb15-22" tabindex="-1"></a><span class="co"># Aplicamos la función a todos los índices</span></span>
+<span id="cb15-23"><a href="desarrollo.html#cb15-23" tabindex="-1"></a><span class="cf">for</span> (indice <span class="cf">in</span> nombres_indices) {</span>
+<span id="cb15-24"><a href="desarrollo.html#cb15-24" tabindex="-1"></a>  <span class="fu">descomponer_y_graficar</span>(cierres_zoo[[indice]], indice)</span>
+<span id="cb15-25"><a href="desarrollo.html#cb15-25" tabindex="-1"></a>}</span></code></pre></div>
+</details>
+<p><img src="_main_files/figure-html/unnamed-chunk-13-1.png" width="672" /><img src="_main_files/figure-html/unnamed-chunk-13-2.png" width="672" /><img src="_main_files/figure-html/unnamed-chunk-13-3.png" width="672" /><img src="_main_files/figure-html/unnamed-chunk-13-4.png" width="672" /><img src="_main_files/figure-html/unnamed-chunk-13-5.png" width="672" /><img src="_main_files/figure-html/unnamed-chunk-13-6.png" width="672" /><img src="_main_files/figure-html/unnamed-chunk-13-7.png" width="672" /><img src="_main_files/figure-html/unnamed-chunk-13-8.png" width="672" /><img src="_main_files/figure-html/unnamed-chunk-13-9.png" width="672" /><img src="_main_files/figure-html/unnamed-chunk-13-10.png" width="672" /><img src="_main_files/figure-html/unnamed-chunk-13-11.png" width="672" /><img src="_main_files/figure-html/unnamed-chunk-13-12.png" width="672" /><img src="_main_files/figure-html/unnamed-chunk-13-13.png" width="672" /><img src="_main_files/figure-html/unnamed-chunk-13-14.png" width="672" /><img src="_main_files/figure-html/unnamed-chunk-13-15.png" width="672" /><img src="_main_files/figure-html/unnamed-chunk-13-16.png" width="672" /><img src="_main_files/figure-html/unnamed-chunk-13-17.png" width="672" /><img src="_main_files/figure-html/unnamed-chunk-13-18.png" width="672" /></p>
+</div>
+</div>
+<div id="tabla-de-resumen-con-tendencia-estacionalidad-y-ruido-para-todos-los-indices." class="section level2 hasAnchor" number="3.6">
+<h2><span class="header-section-number">3.6</span> Tabla de resumen con tendencia, estacionalidad y ruido; para todos los indices.<a href="desarrollo.html#tabla-de-resumen-con-tendencia-estacionalidad-y-ruido-para-todos-los-indices." class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<details class=chunk-details><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
+<div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb16-1"><a href="desarrollo.html#cb16-1" tabindex="-1"></a>analizar_comportamiento <span class="ot">&lt;-</span> <span class="cf">function</span>(serie_zoo) {</span>
+<span id="cb16-2"><a href="desarrollo.html#cb16-2" tabindex="-1"></a>  serie_limpia <span class="ot">&lt;-</span> <span class="fu">na.omit</span>(serie_zoo)</span>
+<span id="cb16-3"><a href="desarrollo.html#cb16-3" tabindex="-1"></a></span>
+<span id="cb16-4"><a href="desarrollo.html#cb16-4" tabindex="-1"></a>  <span class="co"># Validar que tenga suficientes datos</span></span>
+<span id="cb16-5"><a href="desarrollo.html#cb16-5" tabindex="-1"></a>  <span class="cf">if</span> (<span class="fu">length</span>(serie_limpia) <span class="sc">&lt;</span> <span class="dv">30</span>) {</span>
+<span id="cb16-6"><a href="desarrollo.html#cb16-6" tabindex="-1"></a>    <span class="fu">return</span>(<span class="fu">c</span>(<span class="at">Tendencia =</span> <span class="cn">NA</span>, <span class="at">Estacionalidad =</span> <span class="cn">NA</span>, <span class="at">Ruido =</span> <span class="cn">NA</span>))</span>
+<span id="cb16-7"><a href="desarrollo.html#cb16-7" tabindex="-1"></a>  }</span>
+<span id="cb16-8"><a href="desarrollo.html#cb16-8" tabindex="-1"></a></span>
+<span id="cb16-9"><a href="desarrollo.html#cb16-9" tabindex="-1"></a>  valores <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(serie_limpia)</span>
+<span id="cb16-10"><a href="desarrollo.html#cb16-10" tabindex="-1"></a>  ts_serie <span class="ot">&lt;-</span> <span class="fu">ts</span>(valores, <span class="at">start =</span> <span class="fu">c</span>(<span class="dv">2019</span>, <span class="dv">1</span>), <span class="at">frequency =</span> <span class="dv">252</span>)</span>
+<span id="cb16-11"><a href="desarrollo.html#cb16-11" tabindex="-1"></a></span>
+<span id="cb16-12"><a href="desarrollo.html#cb16-12" tabindex="-1"></a>  <span class="co"># Intentar descomposición STL</span></span>
+<span id="cb16-13"><a href="desarrollo.html#cb16-13" tabindex="-1"></a>  descomposicion <span class="ot">&lt;-</span> <span class="fu">tryCatch</span>({</span>
+<span id="cb16-14"><a href="desarrollo.html#cb16-14" tabindex="-1"></a>    <span class="fu">stl</span>(ts_serie, <span class="at">s.window =</span> <span class="st">&quot;periodic&quot;</span>)</span>
+<span id="cb16-15"><a href="desarrollo.html#cb16-15" tabindex="-1"></a>  }, <span class="at">error =</span> <span class="cf">function</span>(e) {</span>
+<span id="cb16-16"><a href="desarrollo.html#cb16-16" tabindex="-1"></a>    <span class="fu">return</span>(<span class="cn">NULL</span>)</span>
+<span id="cb16-17"><a href="desarrollo.html#cb16-17" tabindex="-1"></a>  })</span>
+<span id="cb16-18"><a href="desarrollo.html#cb16-18" tabindex="-1"></a></span>
+<span id="cb16-19"><a href="desarrollo.html#cb16-19" tabindex="-1"></a>  <span class="cf">if</span> (<span class="fu">is.null</span>(descomposicion)) {</span>
+<span id="cb16-20"><a href="desarrollo.html#cb16-20" tabindex="-1"></a>    <span class="fu">return</span>(<span class="fu">c</span>(<span class="at">Tendencia =</span> <span class="cn">NA</span>, <span class="at">Estacionalidad =</span> <span class="cn">NA</span>, <span class="at">Ruido =</span> <span class="cn">NA</span>))</span>
+<span id="cb16-21"><a href="desarrollo.html#cb16-21" tabindex="-1"></a>  }</span>
+<span id="cb16-22"><a href="desarrollo.html#cb16-22" tabindex="-1"></a></span>
+<span id="cb16-23"><a href="desarrollo.html#cb16-23" tabindex="-1"></a>  trend <span class="ot">&lt;-</span> descomposicion<span class="sc">$</span>time.series[, <span class="st">&quot;trend&quot;</span>]</span>
+<span id="cb16-24"><a href="desarrollo.html#cb16-24" tabindex="-1"></a>  seasonal <span class="ot">&lt;-</span> descomposicion<span class="sc">$</span>time.series[, <span class="st">&quot;seasonal&quot;</span>]</span>
+<span id="cb16-25"><a href="desarrollo.html#cb16-25" tabindex="-1"></a>  remainder <span class="ot">&lt;-</span> descomposicion<span class="sc">$</span>time.series[, <span class="st">&quot;remainder&quot;</span>]</span>
+<span id="cb16-26"><a href="desarrollo.html#cb16-26" tabindex="-1"></a></span>
+<span id="cb16-27"><a href="desarrollo.html#cb16-27" tabindex="-1"></a>  <span class="co"># Validar que trend tenga al menos dos valores válidos</span></span>
+<span id="cb16-28"><a href="desarrollo.html#cb16-28" tabindex="-1"></a>  <span class="cf">if</span> (<span class="fu">sum</span>(<span class="sc">!</span><span class="fu">is.na</span>(trend)) <span class="sc">&lt;</span> <span class="dv">2</span>) {</span>
+<span id="cb16-29"><a href="desarrollo.html#cb16-29" tabindex="-1"></a>    <span class="fu">return</span>(<span class="fu">c</span>(<span class="at">Tendencia =</span> <span class="cn">NA</span>, <span class="at">Estacionalidad =</span> <span class="cn">NA</span>, <span class="at">Ruido =</span> <span class="cn">NA</span>))</span>
+<span id="cb16-30"><a href="desarrollo.html#cb16-30" tabindex="-1"></a>  }</span>
+<span id="cb16-31"><a href="desarrollo.html#cb16-31" tabindex="-1"></a></span>
+<span id="cb16-32"><a href="desarrollo.html#cb16-32" tabindex="-1"></a>  <span class="co"># Extraer extremos no NA para la tendencia</span></span>
+<span id="cb16-33"><a href="desarrollo.html#cb16-33" tabindex="-1"></a>  primer_valido <span class="ot">&lt;-</span> trend[<span class="fu">which</span>(<span class="sc">!</span><span class="fu">is.na</span>(trend))[<span class="dv">1</span>]]</span>
+<span id="cb16-34"><a href="desarrollo.html#cb16-34" tabindex="-1"></a>  ultimo_valido <span class="ot">&lt;-</span> trend[<span class="fu">rev</span>(<span class="fu">which</span>(<span class="sc">!</span><span class="fu">is.na</span>(trend)))[<span class="dv">1</span>]]</span>
+<span id="cb16-35"><a href="desarrollo.html#cb16-35" tabindex="-1"></a>  media_trend <span class="ot">&lt;-</span> <span class="fu">mean</span>(trend, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb16-36"><a href="desarrollo.html#cb16-36" tabindex="-1"></a></span>
+<span id="cb16-37"><a href="desarrollo.html#cb16-37" tabindex="-1"></a>  <span class="co"># Calcular cambio de tendencia de forma segura</span></span>
+<span id="cb16-38"><a href="desarrollo.html#cb16-38" tabindex="-1"></a>  cambio_tendencia <span class="ot">&lt;-</span> (ultimo_valido <span class="sc">-</span> primer_valido) <span class="sc">/</span> media_trend</span>
+<span id="cb16-39"><a href="desarrollo.html#cb16-39" tabindex="-1"></a></span>
+<span id="cb16-40"><a href="desarrollo.html#cb16-40" tabindex="-1"></a>  <span class="cf">if</span> (<span class="fu">is.na</span>(cambio_tendencia)) {</span>
+<span id="cb16-41"><a href="desarrollo.html#cb16-41" tabindex="-1"></a>    tendencia_eval <span class="ot">&lt;-</span> <span class="cn">NA</span></span>
+<span id="cb16-42"><a href="desarrollo.html#cb16-42" tabindex="-1"></a>  } <span class="cf">else</span> <span class="cf">if</span> (<span class="fu">abs</span>(cambio_tendencia) <span class="sc">&gt;</span> <span class="fl">0.1</span>) {</span>
+<span id="cb16-43"><a href="desarrollo.html#cb16-43" tabindex="-1"></a>    tendencia_eval <span class="ot">&lt;-</span> <span class="fu">ifelse</span>(cambio_tendencia <span class="sc">&gt;</span> <span class="dv">0</span>, <span class="st">&quot;Creciente&quot;</span>, <span class="st">&quot;Decreciente&quot;</span>)</span>
+<span id="cb16-44"><a href="desarrollo.html#cb16-44" tabindex="-1"></a>  } <span class="cf">else</span> {</span>
+<span id="cb16-45"><a href="desarrollo.html#cb16-45" tabindex="-1"></a>    tendencia_eval <span class="ot">&lt;-</span> <span class="st">&quot;Estable&quot;</span></span>
+<span id="cb16-46"><a href="desarrollo.html#cb16-46" tabindex="-1"></a>  }</span>
+<span id="cb16-47"><a href="desarrollo.html#cb16-47" tabindex="-1"></a></span>
+<span id="cb16-48"><a href="desarrollo.html#cb16-48" tabindex="-1"></a>  promedio_nivel <span class="ot">&lt;-</span> <span class="fu">mean</span>(valores, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb16-49"><a href="desarrollo.html#cb16-49" tabindex="-1"></a>  amplitud_estacional <span class="ot">&lt;-</span> <span class="fu">max</span>(seasonal, <span class="at">na.rm =</span> <span class="cn">TRUE</span>) <span class="sc">-</span> <span class="fu">min</span>(seasonal, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb16-50"><a href="desarrollo.html#cb16-50" tabindex="-1"></a></span>
+<span id="cb16-51"><a href="desarrollo.html#cb16-51" tabindex="-1"></a>  estacionalidad_eval <span class="ot">&lt;-</span> <span class="cf">if</span> ((amplitud_estacional <span class="sc">/</span> promedio_nivel) <span class="sc">&gt;</span> <span class="fl">0.05</span>) {</span>
+<span id="cb16-52"><a href="desarrollo.html#cb16-52" tabindex="-1"></a>    <span class="st">&quot;Fuerte&quot;</span></span>
+<span id="cb16-53"><a href="desarrollo.html#cb16-53" tabindex="-1"></a>  } <span class="cf">else</span> {</span>
+<span id="cb16-54"><a href="desarrollo.html#cb16-54" tabindex="-1"></a>    <span class="st">&quot;Débil&quot;</span></span>
+<span id="cb16-55"><a href="desarrollo.html#cb16-55" tabindex="-1"></a>  }</span>
+<span id="cb16-56"><a href="desarrollo.html#cb16-56" tabindex="-1"></a></span>
+<span id="cb16-57"><a href="desarrollo.html#cb16-57" tabindex="-1"></a>  sd_ruido <span class="ot">&lt;-</span> <span class="fu">sd</span>(remainder, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb16-58"><a href="desarrollo.html#cb16-58" tabindex="-1"></a>  ruido_eval <span class="ot">&lt;-</span> <span class="cf">if</span> ((sd_ruido <span class="sc">/</span> promedio_nivel) <span class="sc">&gt;</span> <span class="fl">0.05</span>) {</span>
+<span id="cb16-59"><a href="desarrollo.html#cb16-59" tabindex="-1"></a>    <span class="st">&quot;Alto&quot;</span></span>
+<span id="cb16-60"><a href="desarrollo.html#cb16-60" tabindex="-1"></a>  } <span class="cf">else</span> {</span>
+<span id="cb16-61"><a href="desarrollo.html#cb16-61" tabindex="-1"></a>    <span class="st">&quot;Moderado&quot;</span></span>
+<span id="cb16-62"><a href="desarrollo.html#cb16-62" tabindex="-1"></a>  }</span>
+<span id="cb16-63"><a href="desarrollo.html#cb16-63" tabindex="-1"></a></span>
+<span id="cb16-64"><a href="desarrollo.html#cb16-64" tabindex="-1"></a>  <span class="fu">return</span>(<span class="fu">c</span>(<span class="at">Tendencia =</span> tendencia_eval, <span class="at">Estacionalidad =</span> estacionalidad_eval, <span class="at">Ruido =</span> ruido_eval))</span>
+<span id="cb16-65"><a href="desarrollo.html#cb16-65" tabindex="-1"></a>}</span>
+<span id="cb16-66"><a href="desarrollo.html#cb16-66" tabindex="-1"></a></span>
+<span id="cb16-67"><a href="desarrollo.html#cb16-67" tabindex="-1"></a><span class="co"># Aplicar la función a todos los índices</span></span>
+<span id="cb16-68"><a href="desarrollo.html#cb16-68" tabindex="-1"></a>resumen_automatico <span class="ot">&lt;-</span> <span class="fu">t</span>(<span class="fu">sapply</span>(cierres_zoo, analizar_comportamiento))</span>
+<span id="cb16-69"><a href="desarrollo.html#cb16-69" tabindex="-1"></a></span>
+<span id="cb16-70"><a href="desarrollo.html#cb16-70" tabindex="-1"></a><span class="co"># Convertir a data frame con nombres claros</span></span>
+<span id="cb16-71"><a href="desarrollo.html#cb16-71" tabindex="-1"></a>resumen_automatico_df <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
+<span id="cb16-72"><a href="desarrollo.html#cb16-72" tabindex="-1"></a>  <span class="at">Indice =</span> <span class="fu">rownames</span>(resumen_automatico),</span>
+<span id="cb16-73"><a href="desarrollo.html#cb16-73" tabindex="-1"></a>  <span class="at">Tendencia =</span> resumen_automatico[, <span class="st">&quot;Tendencia&quot;</span>],</span>
+<span id="cb16-74"><a href="desarrollo.html#cb16-74" tabindex="-1"></a>  <span class="at">Estacionalidad =</span> resumen_automatico[, <span class="st">&quot;Estacionalidad&quot;</span>],</span>
+<span id="cb16-75"><a href="desarrollo.html#cb16-75" tabindex="-1"></a>  <span class="at">Ruido =</span> resumen_automatico[, <span class="st">&quot;Ruido&quot;</span>],</span>
+<span id="cb16-76"><a href="desarrollo.html#cb16-76" tabindex="-1"></a>  <span class="at">row.names =</span> <span class="cn">NULL</span></span>
+<span id="cb16-77"><a href="desarrollo.html#cb16-77" tabindex="-1"></a>)</span>
+<span id="cb16-78"><a href="desarrollo.html#cb16-78" tabindex="-1"></a></span>
+<span id="cb16-79"><a href="desarrollo.html#cb16-79" tabindex="-1"></a><span class="co"># Mostrar tabla</span></span>
+<span id="cb16-80"><a href="desarrollo.html#cb16-80" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">kable</span>(</span>
+<span id="cb16-81"><a href="desarrollo.html#cb16-81" tabindex="-1"></a>  resumen_automatico_df,</span>
+<span id="cb16-82"><a href="desarrollo.html#cb16-82" tabindex="-1"></a>  <span class="at">caption =</span> <span class="st">&quot;Resumen automático de la tendencia, estacionalidad y ruido observados por índice (basado en descomposición STL).&quot;</span></span>
+<span id="cb16-83"><a href="desarrollo.html#cb16-83" tabindex="-1"></a>)</span></code></pre></div>
+</details>
+<table>
+<caption><span id="tab:unnamed-chunk-14">Table 3.1: </span>Resumen automático de la tendencia, estacionalidad y ruido observados por índice (basado en descomposición STL).</caption>
+<thead>
+<tr class="header">
+<th align="left">Indice</th>
+<th align="left">Tendencia</th>
+<th align="left">Estacionalidad</th>
+<th align="left">Ruido</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">SP500</td>
+<td align="left">Creciente</td>
+<td align="left">Fuerte</td>
+<td align="left">Moderado</td>
+</tr>
+<tr class="even">
+<td align="left">DowJones</td>
+<td align="left">Creciente</td>
+<td align="left">Fuerte</td>
+<td align="left">Moderado</td>
+</tr>
+<tr class="odd">
+<td align="left">Nasdaq</td>
+<td align="left">Creciente</td>
+<td align="left">Fuerte</td>
+<td align="left">Moderado</td>
+</tr>
+<tr class="even">
+<td align="left">DAX</td>
+<td align="left">Creciente</td>
+<td align="left">Fuerte</td>
+<td align="left">Moderado</td>
+</tr>
+<tr class="odd">
+<td align="left">CAC40</td>
+<td align="left">Creciente</td>
+<td align="left">Fuerte</td>
+<td align="left">Moderado</td>
+</tr>
+<tr class="even">
+<td align="left">FTSE100</td>
+<td align="left">Creciente</td>
+<td align="left">Fuerte</td>
+<td align="left">Moderado</td>
+</tr>
+<tr class="odd">
+<td align="left">Nikkei225</td>
+<td align="left">Creciente</td>
+<td align="left">Fuerte</td>
+<td align="left">Moderado</td>
+</tr>
+<tr class="even">
+<td align="left">HangSeng</td>
+<td align="left">Decreciente</td>
+<td align="left">Fuerte</td>
+<td align="left">Moderado</td>
+</tr>
+<tr class="odd">
+<td align="left">ShanghaiComposite</td>
+<td align="left">Creciente</td>
+<td align="left">Fuerte</td>
+<td align="left">Moderado</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="mapa-de-calor" class="section level2 hasAnchor" number="3.7">
+<h2><span class="header-section-number">3.7</span> Mapa de calor<a href="desarrollo.html#mapa-de-calor" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<details class=chunk-details><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
+<div class="sourceCode" id="cb17"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb17-1"><a href="desarrollo.html#cb17-1" tabindex="-1"></a><span class="co"># 1. Usamos el resumen automático que ya creamos</span></span>
+<span id="cb17-2"><a href="desarrollo.html#cb17-2" tabindex="-1"></a>resumen_mapa <span class="ot">&lt;-</span> resumen_automatico_df</span>
+<span id="cb17-3"><a href="desarrollo.html#cb17-3" tabindex="-1"></a></span>
+<span id="cb17-4"><a href="desarrollo.html#cb17-4" tabindex="-1"></a><span class="co"># 2. Codificar las variables cualitativas a valores numéricos</span></span>
+<span id="cb17-5"><a href="desarrollo.html#cb17-5" tabindex="-1"></a>resumen_mapa_numeric <span class="ot">&lt;-</span> resumen_mapa <span class="sc">%&gt;%</span></span>
+<span id="cb17-6"><a href="desarrollo.html#cb17-6" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb17-7"><a href="desarrollo.html#cb17-7" tabindex="-1"></a>    <span class="at">Tendencia =</span> <span class="fu">case_when</span>(</span>
+<span id="cb17-8"><a href="desarrollo.html#cb17-8" tabindex="-1"></a>      Tendencia <span class="sc">==</span> <span class="st">&quot;Creciente&quot;</span> <span class="sc">~</span> <span class="dv">1</span>,</span>
+<span id="cb17-9"><a href="desarrollo.html#cb17-9" tabindex="-1"></a>      Tendencia <span class="sc">==</span> <span class="st">&quot;Decreciente&quot;</span> <span class="sc">~</span> <span class="sc">-</span><span class="dv">1</span>,</span>
+<span id="cb17-10"><a href="desarrollo.html#cb17-10" tabindex="-1"></a>      Tendencia <span class="sc">==</span> <span class="st">&quot;Estable&quot;</span> <span class="sc">~</span> <span class="dv">0</span>,</span>
+<span id="cb17-11"><a href="desarrollo.html#cb17-11" tabindex="-1"></a>      <span class="cn">TRUE</span> <span class="sc">~</span> <span class="cn">NA_real_</span></span>
+<span id="cb17-12"><a href="desarrollo.html#cb17-12" tabindex="-1"></a>    ),</span>
+<span id="cb17-13"><a href="desarrollo.html#cb17-13" tabindex="-1"></a>    <span class="at">Estacionalidad =</span> <span class="fu">case_when</span>(</span>
+<span id="cb17-14"><a href="desarrollo.html#cb17-14" tabindex="-1"></a>      Estacionalidad <span class="sc">==</span> <span class="st">&quot;Fuerte&quot;</span> <span class="sc">~</span> <span class="dv">1</span>,</span>
+<span id="cb17-15"><a href="desarrollo.html#cb17-15" tabindex="-1"></a>      Estacionalidad <span class="sc">==</span> <span class="st">&quot;Débil&quot;</span> <span class="sc">~</span> <span class="dv">0</span>,</span>
+<span id="cb17-16"><a href="desarrollo.html#cb17-16" tabindex="-1"></a>      <span class="cn">TRUE</span> <span class="sc">~</span> <span class="cn">NA_real_</span></span>
+<span id="cb17-17"><a href="desarrollo.html#cb17-17" tabindex="-1"></a>    ),</span>
+<span id="cb17-18"><a href="desarrollo.html#cb17-18" tabindex="-1"></a>    <span class="at">Ruido =</span> <span class="fu">case_when</span>(</span>
+<span id="cb17-19"><a href="desarrollo.html#cb17-19" tabindex="-1"></a>      Ruido <span class="sc">==</span> <span class="st">&quot;Alto&quot;</span> <span class="sc">~</span> <span class="dv">1</span>,</span>
+<span id="cb17-20"><a href="desarrollo.html#cb17-20" tabindex="-1"></a>      Ruido <span class="sc">==</span> <span class="st">&quot;Moderado&quot;</span> <span class="sc">~</span> <span class="dv">0</span>,</span>
+<span id="cb17-21"><a href="desarrollo.html#cb17-21" tabindex="-1"></a>      <span class="cn">TRUE</span> <span class="sc">~</span> <span class="cn">NA_real_</span></span>
+<span id="cb17-22"><a href="desarrollo.html#cb17-22" tabindex="-1"></a>    )</span>
+<span id="cb17-23"><a href="desarrollo.html#cb17-23" tabindex="-1"></a>  )</span>
+<span id="cb17-24"><a href="desarrollo.html#cb17-24" tabindex="-1"></a></span>
+<span id="cb17-25"><a href="desarrollo.html#cb17-25" tabindex="-1"></a><span class="co"># 3. Reorganizar el dataframe en formato largo para ggplot</span></span>
+<span id="cb17-26"><a href="desarrollo.html#cb17-26" tabindex="-1"></a>resumen_long <span class="ot">&lt;-</span> resumen_mapa_numeric <span class="sc">%&gt;%</span></span>
+<span id="cb17-27"><a href="desarrollo.html#cb17-27" tabindex="-1"></a>  <span class="fu">pivot_longer</span>(<span class="at">cols =</span> <span class="fu">c</span>(Tendencia, Estacionalidad, Ruido),</span>
+<span id="cb17-28"><a href="desarrollo.html#cb17-28" tabindex="-1"></a>               <span class="at">names_to =</span> <span class="st">&quot;Caracteristica&quot;</span>,</span>
+<span id="cb17-29"><a href="desarrollo.html#cb17-29" tabindex="-1"></a>               <span class="at">values_to =</span> <span class="st">&quot;Valor&quot;</span>)</span>
+<span id="cb17-30"><a href="desarrollo.html#cb17-30" tabindex="-1"></a></span>
+<span id="cb17-31"><a href="desarrollo.html#cb17-31" tabindex="-1"></a><span class="co"># 4. Crear el Heatmap</span></span>
+<span id="cb17-32"><a href="desarrollo.html#cb17-32" tabindex="-1"></a><span class="fu">ggplot</span>(resumen_long, <span class="fu">aes</span>(<span class="at">x =</span> Caracteristica, <span class="at">y =</span> Indice, <span class="at">fill =</span> Valor)) <span class="sc">+</span></span>
+<span id="cb17-33"><a href="desarrollo.html#cb17-33" tabindex="-1"></a>  <span class="fu">geom_tile</span>(<span class="at">color =</span> <span class="st">&quot;white&quot;</span>) <span class="sc">+</span></span>
+<span id="cb17-34"><a href="desarrollo.html#cb17-34" tabindex="-1"></a>  <span class="fu">scale_fill_gradient2</span>(</span>
+<span id="cb17-35"><a href="desarrollo.html#cb17-35" tabindex="-1"></a>    <span class="at">low =</span> <span class="st">&quot;red&quot;</span>, <span class="at">mid =</span> <span class="st">&quot;white&quot;</span>, <span class="at">high =</span> <span class="st">&quot;green&quot;</span>, <span class="at">midpoint =</span> <span class="dv">0</span>,</span>
+<span id="cb17-36"><a href="desarrollo.html#cb17-36" tabindex="-1"></a>    <span class="at">limits =</span> <span class="fu">c</span>(<span class="sc">-</span><span class="dv">1</span>, <span class="dv">1</span>),</span>
+<span id="cb17-37"><a href="desarrollo.html#cb17-37" tabindex="-1"></a>    <span class="at">name =</span> <span class="st">&quot;Nivel&quot;</span></span>
+<span id="cb17-38"><a href="desarrollo.html#cb17-38" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb17-39"><a href="desarrollo.html#cb17-39" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb17-40"><a href="desarrollo.html#cb17-40" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">&quot;Mapa de Calor: Tendencia, Estacionalidad y Ruido por Índice&quot;</span>,</span>
+<span id="cb17-41"><a href="desarrollo.html#cb17-41" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">&quot;Componente&quot;</span>,</span>
+<span id="cb17-42"><a href="desarrollo.html#cb17-42" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">&quot;Índice Bursátil&quot;</span></span>
+<span id="cb17-43"><a href="desarrollo.html#cb17-43" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb17-44"><a href="desarrollo.html#cb17-44" tabindex="-1"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
+<span id="cb17-45"><a href="desarrollo.html#cb17-45" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">angle =</span> <span class="dv">45</span>, <span class="at">hjust =</span> <span class="dv">1</span>))</span></code></pre></div>
+</details>
+<p><img src="_main_files/figure-html/unnamed-chunk-15-1.png" width="672" /></p>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="referencias.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="desarrollo-actividad-2..html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/USERNAME/REPO/edit/BRANCH/index.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["_main.pdf", "_main.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
